@@ -10,7 +10,7 @@ const Hero = () => {
   ];
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden mt-32">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32">
       {/* Magic Background Gradients */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-60 -left-60 w-[500px] h-[500px] bg-gradient-to-br from-primary-yellow/30 via-purple-500/15 to-blue-500/15 rounded-full blur-3xl animate-pulse"></div>
@@ -25,7 +25,7 @@ const Hero = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            <span className="text-white">IT Business:</span>
+            <span className="text-white">IT Business</span>
             <br />
             <span className="text-primary-yellow">Impulsionando Inovação</span>
             <br />

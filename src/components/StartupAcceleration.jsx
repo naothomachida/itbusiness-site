@@ -143,12 +143,14 @@ const StartupAcceleration = () => {
 
         {/* CTA */}
         <div className="text-center mt-12">
-          <button className="btn-primary text-lg px-8 py-4 mr-4">
-            Inscreva sua Startup
-          </button>
-          <button className="btn-secondary text-lg px-8 py-4">
-            Conheça o Programa
-          </button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#contato" className="btn-primary text-lg px-8 py-4 inline-block">
+              Inscreva sua Startup
+            </a>
+            <a href="#contato" className="btn-secondary text-lg px-8 py-4 inline-block">
+              Conheça o Programa
+            </a>
+          </div>
         </div>
       </div>
     </section>
