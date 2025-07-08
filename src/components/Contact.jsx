@@ -24,8 +24,8 @@ const Contact = () => {
     {
       icon: <div className="w-6 h-6 bg-primary-yellow rounded-full"></div>,
       label: 'Email',
-      value: 'contato@itbusiness.com',
-      link: 'mailto:contato@itbusiness.com'
+      value: 'contato@itbusiness.com.br',
+      link: 'mailto:contato@itbusiness.com.br'
     }
   ];
 
