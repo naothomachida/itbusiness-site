@@ -128,12 +128,12 @@ const SoftwareDevelopment = () => {
             Planos de <span className="text-primary-yellow">Desenvolvimento</span>
           </h3>
           <p className="text-gray-300 text-center mb-12 max-w-3xl mx-auto">
-            Duas opções estratégicas para atender desde projetos iniciais até soluções corporativas complexas
+            Três opções estratégicas para atender desde projetos iniciais até soluções corporativas complexas
           </p>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {/* Initial Project Plan */}
-            <div className="bg-gradient-to-br from-primary-yellow/20 to-primary-yellow/5 p-8 rounded-xl border-2 border-primary-yellow/40 relative">
+            <div className="bg-gradient-to-br from-primary-yellow/20 to-primary-yellow/5 p-6 rounded-xl border-2 border-primary-yellow/40 relative">
               <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary-yellow text-black px-4 py-1 rounded-full text-xs font-bold">
                 PROJETO INICIAL
               </div>
@@ -145,17 +145,125 @@ const SoftwareDevelopment = () => {
                 </div>
                 <p className="text-gray-400">Solução de entrada para startups e pequenas empresas</p>
               </div>
+              
+              <div className="mb-6">
+                <h5 className="text-primary-yellow font-semibold mb-3">Incluso:</h5>
+                <ul className="text-gray-300 text-sm space-y-2">
+                  <li className="flex items-center">
+                    <span className="text-primary-yellow mr-2">✓</span>
+                    Processo de Discovery (análise do sistema)
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-primary-yellow mr-2">✓</span>
+                    Prototipagem
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Business Plan */}
+            <div className="bg-gray-800 p-6 rounded-xl border border-primary-yellow/20 hover:border-primary-yellow/40 transition-all duration-300">
+              <div className="text-center mb-6">
+                <h4 className="text-2xl font-bold text-primary-yellow mb-2">Business</h4>
+                <div className="mb-2">
+                  <div className="text-sm text-gray-400 mb-1">A partir de</div>
+                  <div className="text-4xl font-bold text-white">R$ 85.000</div>
+                </div>
+                <p className="text-gray-400">Soluções para médias empresas</p>
+              </div>
+              
+              <div className="mb-6">
+                <h5 className="text-primary-yellow font-semibold mb-3">Ideal para:</h5>
+                <ul className="text-gray-300 text-sm space-y-2">
+                  <li className="flex items-center">
+                    <span className="text-primary-yellow mr-2">✓</span>
+                    Sistemas de gestão
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-primary-yellow mr-2">✓</span>
+                    Plataformas web
+                  </li>
+                </ul>
+              </div>
             </div>
 
             {/* Enterprise Plan */}
-            <div className="bg-gray-800 p-8 rounded-xl border border-primary-yellow/20 hover:border-primary-yellow/40 transition-all duration-300">
+            <div className="bg-gray-800 p-6 rounded-xl border border-primary-yellow/20 hover:border-primary-yellow/40 transition-all duration-300">
               <div className="text-center mb-6">
                 <h4 className="text-2xl font-bold text-primary-yellow mb-2">Enterprise</h4>
                 <div className="mb-2">
                   <div className="text-sm text-gray-400 mb-1">A partir de</div>
-                  <div className="text-4xl font-bold text-white">R$ 320.000</div>
+                  <div className="text-4xl font-bold text-white">R$ 180.000</div>
                 </div>
                 <p className="text-gray-400">Soluções Corporativas Complexas</p>
+              </div>
+              
+              <div className="mb-6">
+                <h5 className="text-primary-yellow font-semibold mb-3">Especializado em:</h5>
+                <ul className="text-gray-300 text-sm space-y-2">
+                  <li className="flex items-center">
+                    <span className="text-primary-yellow mr-2">✓</span>
+                    Processos complexos
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-primary-yellow mr-2">✓</span>
+                    Integrações avançadas
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-primary-yellow mr-2">✓</span>
+                    Arquitetura corporativa
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Support Package */}
+          <div className="mt-16 max-w-2xl mx-auto">
+            <div className="bg-gradient-to-br from-primary-yellow/10 to-primary-yellow/5 p-8 rounded-xl border border-primary-yellow/30 text-center">
+              <h4 className="text-2xl font-bold text-primary-yellow mb-4">
+                Pacote de Suporte + Sustentação
+              </h4>
+              <div className="mb-4">
+                <div className="text-4xl font-bold text-white mb-2">R$ 2.875/mês</div>
+                <p className="text-gray-300">Disponível para todos os planos</p>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-4 text-left">
+                <div>
+                  <h5 className="text-primary-yellow font-semibold mb-2">Inclui:</h5>
+                  <ul className="text-gray-300 text-sm space-y-1">
+                    <li className="flex items-center">
+                      <span className="text-primary-yellow mr-2">✓</span>
+                      Monitoramento 24/7
+                    </li>
+                    <li className="flex items-center">
+                      <span className="text-primary-yellow mr-2">✓</span>
+                      Backup automático
+                    </li>
+                    <li className="flex items-center">
+                      <span className="text-primary-yellow mr-2">✓</span>
+                      Atualizações de segurança
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 className="text-primary-yellow font-semibold mb-2">Benefícios:</h5>
+                  <ul className="text-gray-300 text-sm space-y-1">
+                    <li className="flex items-center">
+                      <span className="text-primary-yellow mr-2">✓</span>
+                      Suporte prioritário
+                    </li>
+                    <li className="flex items-center">
+                      <span className="text-primary-yellow mr-2">✓</span>
+                      Correções de bugs
+                    </li>
+                    <li className="flex items-center">
+                      <span className="text-primary-yellow mr-2">✓</span>
+                      Melhorias contínuas
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

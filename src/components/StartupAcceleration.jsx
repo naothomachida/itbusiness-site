@@ -25,9 +25,9 @@ const StartupAcceleration = () => {
   ];
 
   const stats = [
-    { value: '50+', label: 'Startups Aceleradas' },
-    { value: '80%', label: 'Taxa de Sucesso' },
-    { value: '10+', label: 'Anos de Experiência' },
+    { value: '3+', label: 'Startups Aceleradas' },
+    { value: '100%', label: 'Financiamento Tecnológico' },
+    { value: '11+', label: 'Anos de Experiência' },
     { value: '100M+', label: 'Valor Gerado' }
   ];
 
