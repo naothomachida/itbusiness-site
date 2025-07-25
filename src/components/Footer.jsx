@@ -63,7 +63,9 @@ const Footer = () => {
             
             <div className="space-y-2 text-sm text-gray-400">
               <p>Base Operacional</p>
-              <p>Alphaville, São Paulo - Brasil</p>
+              <p>Alphaville Commercial Center</p>
+              <p>Calçada Flôr de Lótus, 78 - Alphaville Comercial</p>
+              <p>Barueri - SP, 06453-016</p>
             </div>
           </div>
 

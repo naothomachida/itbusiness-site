@@ -2,11 +2,9 @@ import React from 'react';
 
 const Hero = () => {
   const metrics = [
-    { value: '500+', label: 'Clientes Atendidos' },
-    { value: '200+', label: 'Projetos de Alto Valor' },
+    { value: '10+', label: 'Clientes Atendidos' },
+    { value: '20+', label: 'Projetos de Alto Valor' },
     { value: '10+', label: 'Anos de Experiência' },
-    { value: '3', label: 'Escritórios Globais' },
-    { value: '50+', label: 'Especialistas no Time' },
   ];
 
   return (
@@ -66,7 +64,7 @@ const Hero = () => {
           <div className="mt-12 p-6 bg-primary-yellow/5 rounded-xl border border-primary-yellow/20">
             <h3 className="text-primary-yellow font-semibold mb-2">Base Operacional</h3>
             <p className="text-gray-300">
-              Sede em <span className="text-primary-yellow font-semibold">Alphaville - SP</span> com <span className="text-primary-yellow font-semibold">rede de parceiros estratégicos</span> em todo o Brasil
+              Sede no <span className="text-primary-yellow font-semibold">Alphaville Commercial Center</span> - <span className="text-primary-yellow font-semibold">Calçada Flôr de Lótus, 78, Barueri - SP</span> com <span className="text-primary-yellow font-semibold">rede de parceiros estratégicos</span> em todo o Brasil
             </p>
           </div>
         </div>

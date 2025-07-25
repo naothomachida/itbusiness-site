@@ -99,10 +99,13 @@ const About = () => {
               Localização Estratégica
             </h3>
             <p className="text-white font-semibold mb-1">
-              Centro Comercial Alphaville
+              Alphaville Commercial Center
             </p>
             <p className="text-gray-300 text-sm">
-              Av. Alphaville, 1000 - Alphaville, Barueri - SP
+              Calçada Flôr de Lótus, 78 - Alphaville Comercial
+            </p>
+            <p className="text-gray-300 text-sm">
+              Barueri - SP, 06453-016
             </p>
           </div>
         </div>
