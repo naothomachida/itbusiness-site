@@ -4,7 +4,7 @@ const Hero = () => {
   const metrics = [
     { value: '10+', label: 'Clientes Atendidos' },
     { value: '20+', label: 'Projetos de Alto Valor' },
-    { value: '10+', label: 'Anos de Experiência' },
+    { value: '11+', label: 'Anos de Experiência' },
   ];
 
   return (
@@ -47,17 +47,19 @@ const Hero = () => {
           </div>
 
           {/* Metrics */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-16">
-            {metrics.map((metric, index) => (
-              <div key={index} className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-primary-yellow mb-2">
-                  {metric.value}
+          <div className="flex justify-center mt-16">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl">
+              {metrics.map((metric, index) => (
+                <div key={index} className="text-center">
+                  <div className="text-2xl md:text-3xl font-bold text-primary-yellow mb-2">
+                    {metric.value}
+                  </div>
+                  <div className="text-sm md:text-base text-gray-400 leading-tight">
+                    {metric.label}
+                  </div>
                 </div>
-                <div className="text-sm md:text-base text-gray-400 leading-tight">
-                  {metric.label}
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
           {/* Business Presence */}
