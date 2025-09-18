@@ -13,11 +13,11 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-primary-yellow text-black font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:bg-opacity-90 hover:shadow-lg;
+    @apply bg-primary-blue text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:bg-opacity-90 hover:shadow-lg;
   }
-  
+
   .btn-secondary {
-    @apply bg-transparent border-2 border-primary-yellow text-primary-yellow font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:bg-primary-yellow hover:text-black;
+    @apply bg-transparent border-2 border-primary-blue text-primary-blue font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:bg-primary-blue hover:text-white;
   }
   
   .smooth-scroll {
