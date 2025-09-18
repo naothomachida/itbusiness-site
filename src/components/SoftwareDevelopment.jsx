@@ -166,8 +166,7 @@ const SoftwareDevelopment = () => {
               <div className="text-center mb-6">
                 <h4 className="text-2xl font-bold text-primary-yellow mb-2">Business</h4>
                 <div className="mb-2">
-                  <div className="text-sm text-gray-400 mb-1">A partir de</div>
-                  <div className="text-4xl font-bold text-white">R$ 85.000</div>
+                  <div className="text-4xl font-bold text-white">Sob consulta</div>
                 </div>
                 <p className="text-gray-400">Soluções para médias empresas</p>
               </div>
@@ -192,8 +191,7 @@ const SoftwareDevelopment = () => {
               <div className="text-center mb-6">
                 <h4 className="text-2xl font-bold text-primary-yellow mb-2">Enterprise</h4>
                 <div className="mb-2">
-                  <div className="text-sm text-gray-400 mb-1">A partir de</div>
-                  <div className="text-4xl font-bold text-white">R$ 180.000</div>
+                  <div className="text-4xl font-bold text-white">Sob consulta</div>
                 </div>
                 <p className="text-gray-400">Soluções Corporativas Complexas</p>
               </div>

@@ -23,6 +23,8 @@ const Hero = () => {
         width={1920}
         height={1080}
       />
+      {/* Dark overlay to improve text readability */}
+      <div className="absolute inset-0 bg-black/80 z-5"></div>
       <Meteors number={30} className="absolute inset-0 z-10" />
 
       {/* Gradient Orbs */}
@@ -38,18 +40,18 @@ const Hero = () => {
             <h2 className="text-lg md:text-xl text-primary-yellow font-semibold mb-4 tracking-wider">
               SEU MVP AINDA NÃO SAIU DO PAPEL?
             </h2>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              <span className="text-white">Sociedade para</span>
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              <span className="text-blue-300">Sociedade para</span>
               <br />
-              <AuroraText className="text-4xl md:text-6xl lg:text-7xl font-bold">
+              <span className="text-blue-600 font-bold">
                 Produção de Software
-              </AuroraText>
+              </span>
               <br />
-              <span className="text-white">e Soluções com</span>
+              <span className="text-blue-300">e Soluções com</span>
               <br />
-              <AuroraText className="text-4xl md:text-6xl lg:text-7xl font-bold">
+              <span className="text-blue-600 font-bold">
                 Inteligência Artificial
-              </AuroraText>
+              </span>
             </h1>
           </div>
 

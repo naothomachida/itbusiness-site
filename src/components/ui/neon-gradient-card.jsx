@@ -4,7 +4,7 @@ import { cn } from "../../lib/utils";
 export default function NeonGradientCard({
   className,
   children,
-  borderSize = 2,
+  borderSize = 1,
   borderRadius = 20,
   neonColors = {
     firstColor: "#ffaa40",
@@ -15,11 +15,12 @@ export default function NeonGradientCard({
   return (
     <div
       className={cn(
-        "relative overflow-hidden rounded-xl bg-black p-[1px]",
+        "relative overflow-hidden rounded-xl bg-black",
         className,
       )}
       style={{
         borderRadius: `${borderRadius}px`,
+        padding: `${borderSize}px`,
       }}
       {...props}
     >
@@ -28,11 +29,10 @@ export default function NeonGradientCard({
         style={{
           background: `conic-gradient(from 0deg, ${neonColors.firstColor}, ${neonColors.secondColor}, ${neonColors.firstColor})`,
           borderRadius: `${borderRadius}px`,
-          padding: `${borderSize}px`,
         }}
       />
       <div
-        className="relative z-10 rounded-xl bg-black"
+        className="relative z-10 rounded-xl bg-black p-10"
         style={{
           borderRadius: `${borderRadius - borderSize}px`,
         }}
