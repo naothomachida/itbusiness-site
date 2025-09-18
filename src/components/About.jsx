@@ -1,41 +1,60 @@
 import React from 'react';
+import NeonGradientCard from './ui/neon-gradient-card';
+import Ripple from './ui/ripple';
 
 const About = () => {
   return (
-    <section id="sobre" className="py-20 bg-gradient-to-br from-black to-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="sobre" className="py-20 bg-gradient-to-br from-black to-gray-800 relative overflow-hidden">
+      <Ripple className="absolute inset-0" />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="text-white">Somos a </span>
-            <span className="text-primary-yellow">IT Business</span>
+            <span className="text-white">Sociedade </span>
+            <span className="text-primary-yellow">sob Conduta</span>
           </h2>
           <p className="text-xl text-primary-yellow font-semibold mb-8">
-            Paixão por Inovação e Resultados
+            Transformação Digital com Responsabilidade
           </p>
         </div>
+
+        <NeonGradientCard className="mb-12 p-8">
+          <div className="text-center">
+            <h3 className="text-2xl font-bold text-primary-yellow mb-6">
+              Nossa Filosofia de Trabalho
+            </h3>
+            <p className="text-lg text-gray-300 leading-relaxed max-w-4xl mx-auto">
+              Operamos como uma <span className="text-primary-yellow font-semibold">sociedade ética e transparente</span>,
+              onde cada projeto é conduzido com <span className="text-primary-yellow font-semibold">responsabilidade integral</span>
+              e <span className="text-primary-yellow font-semibold">compromisso com resultados sustentáveis</span>.
+              Nossos valores direcionam cada decisão técnica e estratégica.
+            </p>
+          </div>
+        </NeonGradientCard>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Content */}
           <div className="space-y-6">
+            <h3 className="text-2xl font-bold text-white mb-4">Modelo de Sociedade</h3>
             <p className="text-lg text-gray-300 leading-relaxed">
-              Na IT Business, somos apaixonados por transformar ideias em realidade digital. 
-              Trabalhamos com base em <span className="text-primary-yellow font-semibold">conceitos sólidos</span>, 
-              <span className="text-primary-yellow font-semibold"> estratégia aplicada</span> e 
-              <span className="text-primary-yellow font-semibold"> execução criativa</span> para entregar 
-              experiências digitais únicas.
+              Estabelecemos <span className="text-primary-yellow font-semibold">parcerias estratégicas</span>
+              baseadas em transparência total, onde seus objetivos se tornam nossos objetivos.
+              Trabalhamos com <span className="text-primary-yellow font-semibold">metodologias ágeis</span>
+              e <span className="text-primary-yellow font-semibold">governança rigorosa</span>
+              para garantir entregas de valor desde o primeiro sprint.
             </p>
 
             <p className="text-lg text-gray-300 leading-relaxed">
-              Combinamos <span className="text-primary-yellow font-semibold">design</span>, 
-              <span className="text-primary-yellow font-semibold"> tecnologia</span> e 
-              <span className="text-primary-yellow font-semibold"> posicionamento digital</span> para criar 
-              soluções que geram autoridade, atraem os clientes certos e impulsionam sua marca rumo ao sucesso real.
+              Nossa estrutura operacional combina <span className="text-primary-yellow font-semibold">expertise técnica avançada</span>,
+              <span className="text-primary-yellow font-semibold"> segurança de classe mundial</span> e
+              <span className="text-primary-yellow font-semibold"> inovação em IA</span> para criar
+              ecossistemas digitais que escalam com segurança e eficiência.
             </p>
 
-            <p className="text-lg text-gray-300 leading-relaxed">
-              Incluímos um braço dedicado a <span className="text-primary-yellow font-semibold">Business Solutions</span>, 
-              oferecendo soluções estratégicas para otimizar e escalar operações.
-            </p>
+            <div className="bg-primary-yellow/10 p-4 rounded-lg border-l-4 border-primary-yellow">
+              <p className="text-primary-yellow font-semibold">
+                "Conduta ética e excelência técnica são nossos pilares fundamentais."
+              </p>
+            </div>
           </div>
 
           {/* Visual Element */}
@@ -76,38 +95,32 @@ const About = () => {
         
         {/* Cards Section */}
         <div className="grid md:grid-cols-3 gap-6 mt-16">
-          <div className="bg-primary-yellow/10 p-6 rounded-xl border border-primary-yellow/20 hover:border-primary-yellow/40 transition-all duration-300">
+          <NeonGradientCard className="p-6 hover:scale-105 transition-transform duration-300">
             <h3 className="text-primary-yellow font-bold text-lg mb-2">
-              Sistemas de Alto Valor
+              🤝 Parcerias Estratégicas
             </h3>
             <p className="text-gray-300 text-sm">
-              Desenvolvemos arquiteturas robustas e escaláveis para empresas que precisam de soluções tecnológicas de alta performance.
+              Formamos sociedades de longo prazo baseadas em confiança mútua, transparência total e objetivos compartilhados.
             </p>
-          </div>
+          </NeonGradientCard>
 
-          <div className="bg-primary-yellow/10 p-6 rounded-xl border border-primary-yellow/20 hover:border-primary-yellow/40 transition-all duration-300">
+          <NeonGradientCard className="p-6 hover:scale-105 transition-transform duration-300">
             <h3 className="text-primary-yellow font-bold text-lg mb-2">
-              Inteligência Artificial Avançada
+              ⚡ Execução Ágil
             </h3>
             <p className="text-gray-300 text-sm">
-              Implementamos soluções de IA que automatizam processos complexos e geram insights estratégicos para seu negócio.
+              Metodologias ágeis com entregas incrementais, feedback contínuo e adaptação rápida às mudanças do mercado.
             </p>
-          </div>
-          
-          <div className="bg-gradient-to-r from-primary-yellow/20 to-primary-yellow/10 p-6 rounded-xl border border-primary-yellow/30 hover:border-primary-yellow/50 transition-all duration-300">
+          </NeonGradientCard>
+
+          <NeonGradientCard className="p-6 hover:scale-105 transition-transform duration-300">
             <h3 className="text-primary-yellow font-bold text-lg mb-2">
-              Localização Estratégica
+              🛡️ Segurança Integral
             </h3>
-            <p className="text-white font-semibold mb-1">
-              Alphaville Commercial Center
-            </p>
             <p className="text-gray-300 text-sm">
-              Calçada Flôr de Lótus, 78 - Alphaville Comercial
+              Proteção de dados, compliance regulatório e governança de segurança em todos os níveis de desenvolvimento.
             </p>
-            <p className="text-gray-300 text-sm">
-              Barueri - SP, 06453-016
-            </p>
-          </div>
+          </NeonGradientCard>
         </div>
       </div>
     </section>
