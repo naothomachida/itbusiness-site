@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import SoftwareDevelopment from './components/SoftwareDevelopment';
 import AI from './components/AI';
+import Cybersecurity from './components/Cybersecurity';
 import StartupAcceleration from './components/StartupAcceleration';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -17,6 +18,7 @@ function App() {
         <About />
         <SoftwareDevelopment />
         <AI />
+        <Cybersecurity />
         <StartupAcceleration />
         <Contact />
       </main>
