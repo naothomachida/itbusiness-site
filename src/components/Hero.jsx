@@ -18,7 +18,7 @@ const Hero = () => {
         className="absolute inset-0 z-0"
         squareSize={4}
         gridGap={6}
-        color="#FFD700"
+        color="#4169E1"
         flickerChance={0.1}
         width={1920}
         height={1080}
@@ -29,15 +29,15 @@ const Hero = () => {
 
       {/* Gradient Orbs */}
       <div className="absolute inset-0 overflow-hidden z-5">
-        <div className="absolute -top-60 -left-60 w-[500px] h-[500px] bg-gradient-to-br from-primary-yellow/30 via-purple-500/15 to-blue-500/15 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-60 -right-60 w-[500px] h-[500px] bg-gradient-to-tl from-purple-500/20 via-pink-500/15 to-primary-yellow/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-gradient-to-r from-cyan-500/12 via-primary-yellow/15 to-orange-500/12 rounded-full blur-2xl animate-pulse delay-2000"></div>
+        <div className="absolute -top-60 -left-60 w-[500px] h-[500px] bg-gradient-to-br from-primary-blue-light/30 via-purple-500/15 to-blue-500/15 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -bottom-60 -right-60 w-[500px] h-[500px] bg-gradient-to-tl from-purple-500/20 via-pink-500/15 to-primary-blue-light/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-gradient-to-r from-cyan-500/12 via-primary-blue-light/15 to-orange-500/12 rounded-full blur-2xl animate-pulse delay-2000"></div>
       </div>
 
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto">
           <div className="mb-8">
-            <h2 className="text-lg md:text-xl text-primary-yellow font-semibold mb-4 tracking-wider">
+            <h2 className="text-lg md:text-xl text-primary-blue font-semibold mb-4 tracking-wider">
               SEU MVP AINDA NÃO SAIU DO PAPEL?
             </h2>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
@@ -57,7 +57,7 @@ const Hero = () => {
 
           <NeonGradientCard className="mb-8 p-6">
             <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
-              <span className="text-primary-yellow font-bold text-2xl md:text-3xl block mb-4">
+              <span className="text-primary-blue font-bold text-2xl md:text-3xl block mb-4">
                 Lançamos produtos em semanas, não em meses.
               </span>
               Transformamos ideias em MVPs funcionais através de nossa sociedade especializada em desenvolvimento ágil,
@@ -79,7 +79,7 @@ const Hero = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl">
               {metrics.map((metric, index) => (
                 <div key={index} className="text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-primary-yellow mb-2">
+                  <div className="text-2xl md:text-3xl font-bold text-primary-blue mb-2">
                     {metric.value}
                   </div>
                   <div className="text-sm md:text-base text-gray-400 leading-tight">
@@ -92,18 +92,18 @@ const Hero = () => {
 
           {/* Specialties */}
           <NeonGradientCard className="mt-12 p-6">
-            <h3 className="text-primary-yellow font-semibold mb-4 text-xl">Nossas Especialidades</h3>
+            <h3 className="text-primary-blue font-semibold mb-4 text-xl">Nossas Especialidades</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
               <div className="text-center">
-                <div className="text-primary-yellow font-semibold mb-2">💻 Desenvolvimento</div>
+                <div className="text-primary-blue font-semibold mb-2">💻 Desenvolvimento</div>
                 <p className="text-gray-300">MVPs e produtos escaláveis</p>
               </div>
               <div className="text-center">
-                <div className="text-primary-yellow font-semibold mb-2">🔒 Cybersegurança</div>
+                <div className="text-primary-blue font-semibold mb-2">🔒 Cybersegurança</div>
                 <p className="text-gray-300">Proteção e auditoria</p>
               </div>
               <div className="text-center">
-                <div className="text-primary-yellow font-semibold mb-2">🤖 IA & Consultoria</div>
+                <div className="text-primary-blue font-semibold mb-2">🤖 IA & Consultoria</div>
                 <p className="text-gray-300">Soluções inteligentes</p>
               </div>
             </div>

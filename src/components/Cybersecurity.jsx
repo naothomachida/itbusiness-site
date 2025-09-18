@@ -59,14 +59,14 @@ const Cybersecurity = () => {
 
         {/* Certifications Marquee */}
         <div className="mb-16">
-          <h3 className="text-center text-primary-yellow font-semibold mb-6 text-lg">
+          <h3 className="text-center text-primary-blue font-semibold mb-6 text-lg">
             Certificações e Frameworks
           </h3>
           <Marquee className="py-4" pauseOnHover>
             {certifications.map((cert, index) => (
               <div
                 key={index}
-                className="mx-4 px-6 py-3 bg-primary-yellow/10 border border-primary-yellow/30 rounded-lg text-primary-yellow font-medium whitespace-nowrap"
+                className="mx-4 px-6 py-3 bg-primary-blue/10 border border-primary-blue/30 rounded-lg text-primary-blue font-medium whitespace-nowrap"
               >
                 {cert}
               </div>
@@ -80,7 +80,7 @@ const Cybersecurity = () => {
             <NeonGradientCard key={index} className="p-6 h-full">
               <div className="text-center">
                 <div className="text-4xl mb-4">{service.icon}</div>
-                <h3 className="text-xl font-semibold text-primary-yellow mb-3">
+                <h3 className="text-xl font-semibold text-primary-blue mb-3">
                   {service.title}
                 </h3>
                 <p className="text-gray-300 text-sm leading-relaxed">
@@ -95,7 +95,7 @@ const Cybersecurity = () => {
         <NeonGradientCard className="p-8">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold text-primary-yellow mb-4">
+              <h3 className="text-2xl font-bold text-primary-blue mb-4">
                 Abordagem Zero Trust
               </h3>
               <p className="text-gray-300 mb-6 leading-relaxed">
@@ -112,7 +112,7 @@ const Cybersecurity = () => {
             </div>
             <div className="text-center">
               <div className="text-6xl mb-4">🛡️</div>
-              <div className="text-primary-yellow font-bold text-xl mb-2">
+              <div className="text-primary-blue font-bold text-xl mb-2">
                 Proteção Proativa
               </div>
               <p className="text-gray-400 text-sm">

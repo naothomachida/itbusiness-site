@@ -11,12 +11,12 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-md border-b border-primary-yellow/20">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-md border-b border-primary-blue/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#home" className="text-2xl font-bold text-primary-yellow hover:text-primary-yellow/90 transition-colors duration-200 smooth-scroll">
+            <a href="#home" className="text-2xl font-bold text-primary-blue hover:text-primary-blue/90 transition-colors duration-200 smooth-scroll">
               IT Business
             </a>
           </div>
@@ -27,7 +27,7 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-white hover:text-primary-yellow transition-colors duration-200 text-sm font-medium smooth-scroll"
+                className="text-white hover:text-primary-blue transition-colors duration-200 text-sm font-medium smooth-scroll"
               >
                 {item.name}
               </a>
@@ -45,7 +45,7 @@ const Header = () => {
           <div className="lg:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-white hover:text-primary-yellow transition-colors duration-200 p-2"
+              className="text-white hover:text-primary-blue transition-colors duration-200 p-2"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isMenuOpen ? (
@@ -61,13 +61,13 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="lg:hidden bg-black/98 backdrop-blur-md border-t border-primary-yellow/20">
+        <div className="lg:hidden bg-black/98 backdrop-blur-md border-t border-primary-blue/20">
           <div className="px-2 pt-2 pb-3 space-y-1">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="block px-3 py-2 text-white hover:text-primary-yellow transition-colors duration-200 text-base font-medium smooth-scroll"
+                className="block px-3 py-2 text-white hover:text-primary-blue transition-colors duration-200 text-base font-medium smooth-scroll"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
