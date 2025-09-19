@@ -51,10 +51,25 @@ const Cybersecurity = () => {
               🔒 Cybersegurança & Consultoria
             </h2>
           </ShineBorder>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
             Protegemos seus ativos digitais com soluções de segurança de classe mundial
             e consultoria estratégica para transformação digital segura.
           </p>
+
+          {/* Urgency Warning */}
+          <div className="bg-gradient-to-r from-red-900/60 to-yellow-900/60 border border-red-400/50 rounded-lg p-6 max-w-4xl mx-auto">
+            <div className="flex items-center justify-center mb-3">
+              <span className="text-3xl mr-3">⏰</span>
+              <h3 className="text-xl font-bold text-red-300">
+                Cada dia sem proteção é um risco multiplicado
+              </h3>
+            </div>
+            <p className="text-red-200 text-center">
+              <span className="font-semibold">Hosting antigo sem cybersegurança</span> é uma porta aberta para invasores.
+              <br className="hidden md:block" />
+              O futuro digital exige proteção moderna - <span className="text-yellow-300 font-semibold">não fique para trás.</span>
+            </p>
+          </div>
         </div>
 
         {/* Certifications Marquee */}

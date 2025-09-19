@@ -34,6 +34,21 @@ const AI = () => {
           <p className="text-xl text-white font-semibold mb-8">
             Transformando o Futuro dos Negócios
           </p>
+
+          {/* AI Warning */}
+          <div className="bg-gradient-to-r from-purple-900/60 to-blue-900/60 border border-purple-400/50 rounded-lg p-6 max-w-4xl mx-auto mb-8">
+            <div className="flex items-center justify-center mb-3">
+              <span className="text-3xl mr-3">🤖</span>
+              <h3 className="text-xl font-bold text-purple-300">
+                Sem IA, você já está obsoleto
+              </h3>
+            </div>
+            <p className="text-purple-200 text-center">
+              <span className="font-semibold">Empresas sem automação inteligente</span> perdem competitividade a cada segundo.
+              <br className="hidden md:block" />
+              O futuro pertence a quem abraça a <span className="text-blue-300 font-semibold">revolução da IA - não fique para trás.</span>
+            </p>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
