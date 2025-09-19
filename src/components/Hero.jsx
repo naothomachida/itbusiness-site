@@ -37,6 +37,20 @@ const Hero = () => {
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto">
           <div className="mb-8">
+            {/* Future Warning */}
+            <div className="bg-gradient-to-r from-red-900/80 to-orange-900/80 border border-red-500/50 rounded-lg p-4 mb-6 backdrop-blur-sm">
+              <div className="flex items-center justify-center mb-2">
+                <span className="text-2xl mr-2">⚠️</span>
+                <h3 className="text-lg md:text-xl text-red-300 font-bold tracking-wider">
+                  O FUTURO NÃO VAI SER GENTIL
+                </h3>
+              </div>
+              <p className="text-red-200 text-center text-sm md:text-base">
+                <span className="font-semibold">Com quem parar no tempo.</span><br />
+                Host antigo. Sem IA. Sem cybersegurança. Sem nuvem.
+              </p>
+            </div>
+
             <h2 className="text-lg md:text-xl text-primary-blue font-semibold mb-4 tracking-wider">
               SEU MVP AINDA NÃO SAIU DO PAPEL?
             </h2>

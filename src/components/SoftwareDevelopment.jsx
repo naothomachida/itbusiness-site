@@ -43,9 +43,24 @@ const SoftwareDevelopment = () => {
           <p className="text-xl text-primary-blue font-semibold mb-4">
             Metodologia Ágil e Foco em Valor
           </p>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-8">
             Processos bem definidos em 4 fases, orientados a resultados e eficiência.
           </p>
+
+          {/* Cloud Infrastructure Warning */}
+          <div className="bg-gradient-to-r from-orange-900/60 to-red-900/60 border border-orange-400/50 rounded-lg p-6 max-w-4xl mx-auto">
+            <div className="flex items-center justify-center mb-3">
+              <span className="text-3xl mr-3">☁️</span>
+              <h3 className="text-xl font-bold text-orange-300">
+                Infraestrutura antiga = Negócio em risco
+              </h3>
+            </div>
+            <p className="text-orange-200 text-center">
+              <span className="font-semibold">Hosting tradicional sem nuvem</span> é lento, inseguro e limitado.
+              <br className="hidden md:block" />
+              O futuro é cloud-native - <span className="text-yellow-300 font-semibold">modernize antes que seja tarde demais.</span>
+            </p>
+          </div>
         </div>
 
         {/* Process Timeline */}
