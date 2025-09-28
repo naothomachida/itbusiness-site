@@ -184,7 +184,12 @@ const Header = () => {
 
       {/* Mobile Navigation - Full Screen */}
       {isMenuOpen && (
-        <div className="lg:hidden fixed top-0 left-0 right-0 bottom-0 w-full h-full z-50 bg-black">
+        <>
+          {/* Background Overlay */}
+          <div className="lg:hidden fixed inset-0 z-40 bg-black/90" />
+
+          {/* Menu Content */}
+          <div className="lg:hidden fixed top-0 left-0 right-0 bottom-0 w-full h-screen z-50 bg-black">
           {/* Header with close button */}
           <div className="flex justify-between items-center h-16 px-4 border-b border-primary-blue/20">
             <div className="text-2xl font-bold text-primary-blue">
@@ -258,6 +263,7 @@ const Header = () => {
             </div>
           </div>
         </div>
+        </>
       )}
     </header>
   );
