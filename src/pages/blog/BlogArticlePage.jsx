@@ -12,6 +12,9 @@ const BlogArticlePage = () => {
   const [relatedArticles, setRelatedArticles] = useState([]);
 
   useEffect(() => {
+    // Scroll to top when component mounts or slug changes
+    window.scrollTo(0, 0);
+
     const foundArticle = blogArticles.find(a => a.slug === slug);
     setArticle(foundArticle);
 
@@ -198,6 +201,7 @@ const BlogArticlePage = () => {
                   <Link
                     to="/contact"
                     className="inline-block bg-primary-blue hover:bg-primary-blue/80 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+                    onClick={() => window.scrollTo(0, 0)}
                   >
                     Falar com Especialista
                   </Link>
@@ -222,9 +226,11 @@ const BlogArticlePage = () => {
                     <span className="text-sm text-primary-blue font-semibold">
                       {relatedArticle.category}
                     </span>
-                    <h3 className="text-xl font-bold text-white mt-2 mb-3 line-clamp-2">
-                      {relatedArticle.title}
-                    </h3>
+                    <Link to={`/blog/${relatedArticle.slug}`} onClick={() => window.scrollTo(0, 0)}>
+                      <h3 className="text-xl font-bold text-white mt-2 mb-3 line-clamp-2 hover:text-primary-blue transition-colors cursor-pointer">
+                        {relatedArticle.title}
+                      </h3>
+                    </Link>
                     <p className="text-gray-300 mb-4 line-clamp-3">
                       {relatedArticle.excerpt}
                     </p>
@@ -236,6 +242,7 @@ const BlogArticlePage = () => {
                     <Link
                       to={`/blog/${relatedArticle.slug}`}
                       className="text-primary-blue hover:text-primary-blue/80 font-semibold text-sm"
+                      onClick={() => window.scrollTo(0, 0)}
                     >
                       Ler mais →
                     </Link>
