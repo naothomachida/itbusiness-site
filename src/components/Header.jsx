@@ -197,15 +197,32 @@ const Header = () => {
           </div>
 
           {/* Navigation Items */}
-          <div className="flex flex-col justify-center items-center min-h-screen px-6 space-y-6 pt-16 pb-20">
-            {navItems.map((item, index) => (
+          <div className="flex flex-col justify-center items-start min-h-screen px-6 space-y-6 pt-16 pb-20 w-full">
+            {/* Sobre Nós */}
+            <Link
+              to="/about"
+              className="group flex items-center space-x-4 text-white hover:text-primary-blue transition-all duration-300 text-xl font-medium transform hover:scale-105"
+              onClick={() => setIsMenuOpen(false)}
+              style={{
+                animationDelay: '0.1s',
+                animation: 'fadeInUp 0.6s ease-out both'
+              }}
+            >
+              <span className="group-hover:scale-110 transition-transform duration-300">
+                {navItems.find(item => item.name === 'Sobre Nós')?.icon}
+              </span>
+              <span>Sobre Nós</span>
+            </Link>
+
+            {/* All Services */}
+            {servicesItems.map((item, index) => (
               <Link
                 key={item.name}
                 to={item.href}
                 className="group flex items-center space-x-4 text-white hover:text-primary-blue transition-all duration-300 text-xl font-medium transform hover:scale-105"
                 onClick={() => setIsMenuOpen(false)}
                 style={{
-                  animationDelay: `${index * 0.1}s`,
+                  animationDelay: `${(index + 2) * 0.1}s`,
                   animation: 'fadeInUp 0.6s ease-out both'
                 }}
               >
@@ -216,27 +233,37 @@ const Header = () => {
               </Link>
             ))}
 
-            {/* Services in Mobile */}
-            <div className="w-full border-t border-primary-blue/20 pt-6">
-              <h3 className="text-primary-blue font-semibold mb-4 text-center">Serviços</h3>
-              {servicesItems.map((item, index) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="group flex items-center space-x-4 text-white hover:text-primary-blue transition-all duration-300 text-lg font-medium transform hover:scale-105 mb-4"
-                  onClick={() => setIsMenuOpen(false)}
-                  style={{
-                    animationDelay: `${(navItems.length + index) * 0.1}s`,
-                    animation: 'fadeInUp 0.6s ease-out both'
-                  }}
-                >
-                  <span className="group-hover:scale-110 transition-transform duration-300">
-                    {item.icon}
-                  </span>
-                  <span>{item.name}</span>
-                </Link>
-              ))}
-            </div>
+            {/* Blog */}
+            <Link
+              to="/blog"
+              className="group flex items-center space-x-4 text-white hover:text-primary-blue transition-all duration-300 text-xl font-medium transform hover:scale-105"
+              onClick={() => setIsMenuOpen(false)}
+              style={{
+                animationDelay: `${(servicesItems.length + 2) * 0.1}s`,
+                animation: 'fadeInUp 0.6s ease-out both'
+              }}
+            >
+              <span className="group-hover:scale-110 transition-transform duration-300">
+                {navItems.find(item => item.name === 'Blog')?.icon}
+              </span>
+              <span>Blog</span>
+            </Link>
+
+            {/* Contato */}
+            <Link
+              to="/contact"
+              className="group flex items-center space-x-4 text-white hover:text-primary-blue transition-all duration-300 text-xl font-medium transform hover:scale-105"
+              onClick={() => setIsMenuOpen(false)}
+              style={{
+                animationDelay: `${(servicesItems.length + 3) * 0.1}s`,
+                animation: 'fadeInUp 0.6s ease-out both'
+              }}
+            >
+              <span className="group-hover:scale-110 transition-transform duration-300">
+                {navItems.find(item => item.name === 'Contato')?.icon}
+              </span>
+              <span>Contato</span>
+            </Link>
 
             {/* CTA Button */}
             <div className="mt-8">
@@ -245,7 +272,7 @@ const Header = () => {
                 className="btn-primary text-lg px-8 py-4 inline-block transform hover:scale-105 transition-all duration-300"
                 onClick={() => setIsMenuOpen(false)}
                 style={{
-                  animationDelay: `${(navItems.length + servicesItems.length) * 0.1}s`,
+                  animationDelay: `${(servicesItems.length + 4) * 0.1}s`,
                   animation: 'fadeInUp 0.6s ease-out both'
                 }}
               >
