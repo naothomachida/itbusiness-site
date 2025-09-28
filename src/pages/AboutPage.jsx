@@ -8,32 +8,26 @@ import Meteors from '../components/ui/meteors';
 const AboutPage = () => {
   const values = [
     {
-      icon: '🎯',
       title: 'Foco no Cliente',
       description: 'Cada decisão é tomada pensando no sucesso do nosso parceiro'
     },
     {
-      icon: '⚡',
       title: 'Agilidade',
       description: 'Entregas rápidas sem comprometer a qualidade'
     },
     {
-      icon: '🔒',
       title: 'Segurança',
       description: 'Proteção de dados e compliance em primeiro lugar'
     },
     {
-      icon: '🚀',
       title: 'Inovação',
       description: 'Sempre utilizando as tecnologias mais avançadas'
     },
     {
-      icon: '🤝',
       title: 'Transparência',
       description: 'Comunicação clara e honesta em todas as etapas'
     },
     {
-      icon: '📈',
       title: 'Crescimento',
       description: 'Construímos soluções que escalam com seu negócio'
     }
@@ -128,11 +122,6 @@ const AboutPage = () => {
                 <h3 className="text-2xl font-bold text-primary-blue mb-4">
                   Sorocaba - Centro
                 </h3>
-                <div className="w-16 h-16 bg-gradient-to-br from-primary-blue to-purple-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                  </svg>
-                </div>
               </div>
 
               <div className="space-y-4 text-center">
@@ -160,11 +149,6 @@ const AboutPage = () => {
                 <h3 className="text-2xl font-bold text-primary-blue mb-4">
                   Alphaville - Sede Principal
                 </h3>
-                <div className="w-16 h-16 bg-gradient-to-br from-primary-blue to-purple-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                  </svg>
-                </div>
               </div>
 
               <div className="space-y-4 text-center">
@@ -274,7 +258,6 @@ const AboutPage = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {values.map((value, index) => (
               <NeonGradientCard key={index} className="p-6 hover:scale-105 transition-transform duration-300">
-                <div className="text-4xl mb-4">{value.icon}</div>
                 <h3 className="text-xl font-bold text-primary-blue mb-3">
                   {value.title}
                 </h3>
