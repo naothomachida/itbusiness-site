@@ -47,40 +47,34 @@ const SoftwarePage = () => {
 
   const expertiseAreas = [
     {
-      title: 'Frontend Avançado',
-      description: 'Dominamos as mais modernas tecnologias de interface',
-      icon: '🎨',
-      highlights: ['Frameworks modernos', 'Design responsivo', 'Performance otimizada', 'UX excepcional']
+      title: 'Interfaces Avançadas',
+      description: 'Criamos experiências digitais modernas e intuitivas',
+      highlights: ['Design responsivo', 'Performance otimizada', 'UX excepcional', 'Acessibilidade completa']
     },
     {
-      title: 'Backend Robusto',
-      description: 'Arquiteturas escaláveis e seguras para qualquer demanda',
-      icon: '⚙️',
-      highlights: ['APIs eficientes', 'Microserviços', 'Alta disponibilidade', 'Segurança avançada']
+      title: 'Arquitetura Robusta',
+      description: 'Sistemas escaláveis e seguros para qualquer demanda',
+      highlights: ['Integrações eficientes', 'Microserviços', 'Alta disponibilidade', 'Segurança avançada']
     },
     {
-      title: 'Cloud Computing',
-      description: 'Especialistas em soluções na nuvem',
-      icon: '☁️',
-      highlights: ['Infraestrutura escalável', 'DevOps automation', 'Monitoramento 24/7', 'Custos otimizados']
+      title: 'Soluções em Nuvem',
+      description: 'Especialistas em infraestrutura moderna',
+      highlights: ['Escalabilidade automática', 'Automação completa', 'Monitoramento 24/7', 'Custos otimizados']
     },
     {
-      title: 'Mobile Excellence',
+      title: 'Aplicações Mobile',
       description: 'Apps nativos e multiplataforma de alta qualidade',
-      icon: '📱',
-      highlights: ['Performance nativa', 'UI/UX intuitiva', 'Integração completa', 'Store optimization']
+      highlights: ['Performance nativa', 'Design intuitivo', 'Integração completa', 'Otimização para lojas']
     },
     {
-      title: 'Banco de Dados',
-      description: 'Gestão eficiente de dados em qualquer escala',
-      icon: '🗃️',
+      title: 'Gestão de Dados',
+      description: 'Armazenamento e análise eficiente em qualquer escala',
       highlights: ['Modelagem otimizada', 'Alta performance', 'Backup automático', 'Análise avançada']
     },
     {
       title: 'Integração de Sistemas',
       description: 'Conectamos diferentes plataformas perfeitamente',
-      icon: '🔗',
-      highlights: ['APIs robustas', 'Sincronização real-time', 'Protocolos seguros', 'Compatibilidade total']
+      highlights: ['Conexões robustas', 'Sincronização real-time', 'Protocolos seguros', 'Compatibilidade total']
     }
   ];
 
@@ -218,7 +212,6 @@ const SoftwarePage = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {expertiseAreas.map((area, index) => (
               <NeonGradientCard key={index} className="p-6 hover:scale-105 transition-transform duration-300">
-                <div className="text-4xl mb-4">{area.icon}</div>
                 <h3 className="text-xl font-bold text-primary-blue mb-3">
                   {area.title}
                 </h3>
