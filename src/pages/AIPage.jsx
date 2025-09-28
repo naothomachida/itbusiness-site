@@ -16,7 +16,7 @@ const AIPage = () => {
       benefits: ['Processos personalizados', 'Automação inteligente', 'Decisões em tempo real', 'Escalabilidade garantida']
     },
     {
-      title: 'Análise Empresarial Preditiva',
+      title: 'Análise Empresarial',
       description: 'Antecipe tendências, otimize recursos e maximize lucros',
       benefits: ['Previsão de vendas', 'Gestão de estoque', 'Análise de risco', 'Oportunidades de mercado']
     },
