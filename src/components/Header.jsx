@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import MobileMenu from './MobileMenu';
 
 const Header = () => {
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const servicesItems = [
     {
@@ -118,17 +120,23 @@ const Header = () => {
 
           {/* Mobile menu button */}
           <div className="lg:hidden">
-            <Link
-              to="/menu"
+            <button
+              onClick={() => setIsMobileMenuOpen(true)}
               className="text-white hover:text-primary-blue transition-colors duration-200 p-2"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
-            </Link>
+            </button>
           </div>
         </div>
       </div>
+
+      {/* Mobile Menu Component */}
+      <MobileMenu
+        isOpen={isMobileMenuOpen}
+        onClose={() => setIsMobileMenuOpen(false)}
+      />
 
     </header>
   );
