@@ -1,18 +1,23 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
+
+  const servicesItems = [
+    { name: 'Desenvolvimento de Software', href: '/software', icon: '💻' },
+    { name: 'Inteligência Artificial', href: '/ai', icon: '🤖' },
+    { name: 'Cybersegurança', href: '/cybersecurity', icon: '🔒' },
+    { name: 'Aceleração de Startups', href: '/startups', icon: '🚀' },
+  ];
 
   const navItems = [
-    { name: 'Início', href: '#home', icon: '🏠' },
-    { name: 'Sobre Nós', href: '#sobre', icon: '👥' },
-    { name: 'Desenvolvimento de Software', href: '#software', icon: '💻' },
-    { name: 'Inteligência Artificial', href: '#ai', icon: '🤖' },
-    { name: 'Cybersegurança', href: '#cybersecurity', icon: '🔒' },
-    { name: 'Aceleração de Startups', href: '#startups', icon: '🚀' },
-    { name: 'Portfólio', href: '#portfolio', icon: '📁' },
-    { name: 'Blog', href: '#blog', icon: '📝' },
-    { name: 'Contato', href: '#contato', icon: '📞' },
+    { name: 'Início', href: '/', icon: '🏠' },
+    { name: 'Sobre Nós', href: '/about', icon: '👥' },
+    { name: 'Portfólio', href: '/portfolio', icon: '📁' },
+    { name: 'Blog', href: '/blog', icon: '📝' },
+    { name: 'Contato', href: '/contact', icon: '📞' },
   ];
 
   return (
@@ -21,29 +26,70 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#home" className="text-2xl font-bold text-primary-blue hover:text-primary-blue/90 transition-colors duration-200 smooth-scroll">
+            <Link to="/" className="text-2xl font-bold text-primary-blue hover:text-primary-blue/90 transition-colors duration-200">
               IT Business
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex space-x-8">
-            {navItems.filter(item => ['Sobre Nós', 'Desenvolvimento de Software', 'Inteligência Artificial', 'Aceleração de Startups'].includes(item.name)).map((item) => (
-              <a
+          <nav className="hidden lg:flex items-center space-x-8">
+            <Link
+              to="/about"
+              className="text-white hover:text-primary-blue transition-colors duration-200 text-sm font-medium"
+            >
+              Sobre Nós
+            </Link>
+
+            {/* Services Dropdown */}
+            <div className="relative">
+              <button
+                onMouseEnter={() => setIsServicesDropdownOpen(true)}
+                onMouseLeave={() => setIsServicesDropdownOpen(false)}
+                className="text-white hover:text-primary-blue transition-colors duration-200 text-sm font-medium flex items-center"
+              >
+                Serviços
+                <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              {/* Dropdown Menu */}
+              {isServicesDropdownOpen && (
+                <div
+                  className="absolute top-full left-0 mt-2 w-64 bg-black/95 backdrop-blur-md border border-primary-blue/20 rounded-lg shadow-xl z-50"
+                  onMouseEnter={() => setIsServicesDropdownOpen(true)}
+                  onMouseLeave={() => setIsServicesDropdownOpen(false)}
+                >
+                  {servicesItems.map((item) => (
+                    <Link
+                      key={item.name}
+                      to={item.href}
+                      className="flex items-center px-4 py-3 text-white hover:text-primary-blue hover:bg-primary-blue/10 transition-colors duration-200 border-b border-gray-700 last:border-b-0"
+                    >
+                      <span className="mr-3 text-lg">{item.icon}</span>
+                      <span className="text-sm font-medium">{item.name}</span>
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {navItems.filter(item => ['Portfólio', 'Blog'].includes(item.name)).map((item) => (
+              <Link
                 key={item.name}
-                href={item.href}
-                className="text-white hover:text-primary-blue transition-colors duration-200 text-sm font-medium smooth-scroll"
+                to={item.href}
+                className="text-white hover:text-primary-blue transition-colors duration-200 text-sm font-medium"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </nav>
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center space-x-4">
-            <a href="#contato" className="btn-primary smooth-scroll">
+            <Link to="/contact" className="btn-primary">
               Fale Conosco
-            </a>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -85,10 +131,10 @@ const Header = () => {
           {/* Navigation Items */}
           <div className="flex flex-col justify-center items-center h-full px-6 space-y-6 pb-20">
             {navItems.map((item, index) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
-                className="group flex items-center space-x-4 text-white hover:text-primary-blue transition-all duration-300 text-xl font-medium smooth-scroll transform hover:scale-105"
+                to={item.href}
+                className="group flex items-center space-x-4 text-white hover:text-primary-blue transition-all duration-300 text-xl font-medium transform hover:scale-105"
                 onClick={() => setIsMenuOpen(false)}
                 style={{
                   animationDelay: `${index * 0.1}s`,
@@ -99,22 +145,44 @@ const Header = () => {
                   {item.icon}
                 </span>
                 <span>{item.name}</span>
-              </a>
+              </Link>
             ))}
+
+            {/* Services in Mobile */}
+            <div className="w-full border-t border-primary-blue/20 pt-6">
+              <h3 className="text-primary-blue font-semibold mb-4 text-center">Serviços</h3>
+              {servicesItems.map((item, index) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="group flex items-center space-x-4 text-white hover:text-primary-blue transition-all duration-300 text-lg font-medium transform hover:scale-105 mb-4"
+                  onClick={() => setIsMenuOpen(false)}
+                  style={{
+                    animationDelay: `${(navItems.length + index) * 0.1}s`,
+                    animation: 'fadeInUp 0.6s ease-out both'
+                  }}
+                >
+                  <span className="text-xl group-hover:scale-110 transition-transform duration-300">
+                    {item.icon}
+                  </span>
+                  <span>{item.name}</span>
+                </Link>
+              ))}
+            </div>
 
             {/* CTA Button */}
             <div className="mt-8">
-              <a
-                href="#contato"
-                className="btn-primary text-lg px-8 py-4 inline-block smooth-scroll transform hover:scale-105 transition-all duration-300"
+              <Link
+                to="/contact"
+                className="btn-primary text-lg px-8 py-4 inline-block transform hover:scale-105 transition-all duration-300"
                 onClick={() => setIsMenuOpen(false)}
                 style={{
-                  animationDelay: `${navItems.length * 0.1}s`,
+                  animationDelay: `${(navItems.length + servicesItems.length) * 0.1}s`,
                   animation: 'fadeInUp 0.6s ease-out both'
                 }}
               >
                 Iniciar Parceria
-              </a>
+              </Link>
             </div>
           </div>
         </div>

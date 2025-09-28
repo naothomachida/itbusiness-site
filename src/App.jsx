@@ -1,29 +1,44 @@
 import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import SoftwareDevelopment from './components/SoftwareDevelopment';
-import AI from './components/AI';
-import Cybersecurity from './components/Cybersecurity';
-import StartupAcceleration from './components/StartupAcceleration';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import SoftwarePage from './pages/SoftwarePage';
+import AIPage from './pages/AIPage';
+import CybersecurityPage from './pages/CybersecurityPage';
+import StartupsPage from './pages/StartupsPage';
+import BlogPage from './pages/BlogPage';
+import BlogArticlePage from './pages/blog/BlogArticlePage';
 import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Layout from './components/shared/Layout';
 
 function App() {
   return (
-    <div className="min-h-screen bg-black text-white">
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <SoftwareDevelopment />
-        <AI />
-        <Cybersecurity />
-        <StartupAcceleration />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/software" element={<SoftwarePage />} />
+        <Route path="/ai" element={<AIPage />} />
+        <Route path="/cybersecurity" element={<CybersecurityPage />} />
+        <Route path="/startups" element={<StartupsPage />} />
+        <Route path="/contact" element={
+          <Layout>
+            <div className="pt-20">
+              <Contact />
+            </div>
+          </Layout>
+        } />
+        <Route path="/portfolio" element={
+          <Layout>
+            <div className="pt-20 min-h-screen flex items-center justify-center">
+              <h1 className="text-4xl font-bold text-primary-blue">Portfólio - Em Breve</h1>
+            </div>
+          </Layout>
+        } />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog/:slug" element={<BlogArticlePage />} />
+      </Routes>
+    </Router>
   );
 }
 
