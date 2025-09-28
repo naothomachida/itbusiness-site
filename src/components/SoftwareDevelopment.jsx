@@ -223,6 +223,7 @@ const SoftwareDevelopment = () => {
                 Pacote de Suporte + Sustentação
               </h4>
               <div className="mb-4">
+                <div className="text-sm text-gray-400 mb-1">A partir de</div>
                 <div className="text-4xl font-bold text-white mb-2">R$ 2.875/mês</div>
                 <p className="text-gray-300">Disponível para todos os planos</p>
               </div>
