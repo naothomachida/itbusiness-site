@@ -89,7 +89,7 @@ const SoftwareDevelopment = () => {
           
           <div className="bg-black/50 p-6 rounded-lg border-l-4 border-primary-blue mb-8">
             <p className="text-gray-300 italic text-lg">
-              "Se você não sente vergonha da primeira versão do seu produto, então ele foi lançado depois da hora."
+              &ldquo;Se você não sente vergonha da primeira versão do seu produto, então ele foi lançado depois da hora.&rdquo;
             </p>
             <p className="text-primary-blue font-semibold mt-3 text-right">
               - Reid Hoffman, Criador do LinkedIn
