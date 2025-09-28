@@ -1,7 +1,6 @@
 import React from 'react';
 import Meteors from './ui/meteors';
 import NeonGradientCard from './ui/neon-gradient-card';
-import AuroraText from './ui/aurora-text';
 import FlickeringGrid from './ui/flickering-grid';
 
 const Hero = () => {

@@ -52,7 +52,7 @@ const About = () => {
 
             <div className="bg-primary-blue/10 p-4 rounded-lg border-l-4 border-primary-blue">
               <p className="text-primary-blue font-semibold">
-                "Conduta ética e excelência técnica são nossos pilares fundamentais."
+                &ldquo;Conduta ética e excelência técnica são nossos pilares fundamentais.&rdquo;
               </p>
             </div>
           </div>

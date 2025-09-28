@@ -100,7 +100,7 @@ const Cybersecurity = () => {
               </h3>
               <p className="text-gray-300 mb-6 leading-relaxed">
                 Implementamos estratégias de segurança baseadas no princípio de
-                "nunca confie, sempre verifique", garantindo proteção máxima
+                &ldquo;nunca confie, sempre verifique&rdquo;, garantindo proteção máxima
                 em todos os níveis da sua infraestrutura.
               </p>
               <ul className="space-y-2 text-sm text-gray-400">
