@@ -97,7 +97,7 @@ const About = () => {
         <div className="grid md:grid-cols-3 gap-6 mt-16">
           <NeonGradientCard className="p-6 hover:scale-105 transition-transform duration-300">
             <h3 className="text-primary-blue font-bold text-lg mb-2">
-              🤝 Parcerias Estratégicas
+              Parcerias Estratégicas
             </h3>
             <p className="text-gray-300 text-sm">
               Formamos parcerias de longo prazo baseadas em confiança mútua, transparência total e objetivos compartilhados.
@@ -106,7 +106,7 @@ const About = () => {
 
           <NeonGradientCard className="p-6 hover:scale-105 transition-transform duration-300">
             <h3 className="text-primary-blue font-bold text-lg mb-2">
-              ⚡ Execução Ágil
+              Execução Ágil
             </h3>
             <p className="text-gray-300 text-sm">
               Metodologias ágeis com entregas incrementais, feedback contínuo e adaptação rápida às mudanças do mercado.
@@ -115,7 +115,7 @@ const About = () => {
 
           <NeonGradientCard className="p-6 hover:scale-105 transition-transform duration-300">
             <h3 className="text-primary-blue font-bold text-lg mb-2">
-              🛡️ Segurança Integral
+              Segurança Integral
             </h3>
             <p className="text-gray-300 text-sm">
               Proteção de dados, compliance regulatório e governança de segurança em todos os níveis de desenvolvimento.

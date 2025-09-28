@@ -8,37 +8,31 @@ import Meteors from '../components/ui/meteors';
 const SoftwarePage = () => {
   const services = [
     {
-      icon: '🚀',
       title: 'MVP Development',
       description: 'Validação rápida de ideias com produtos mínimos viáveis',
       features: ['Prototipagem rápida', 'Validação de mercado', 'Feedback contínuo', 'Iteração ágil']
     },
     {
-      icon: '📱',
       title: 'Aplicativos Mobile',
       description: 'Apps nativos e híbridos para iOS e Android',
       features: ['React Native', 'Flutter', 'Progressive Web Apps', 'App Store Publishing']
     },
     {
-      icon: '💻',
       title: 'Sistemas Web',
       description: 'Plataformas web escaláveis e responsivas',
       features: ['React/Vue.js', 'Node.js', 'Cloud Architecture', 'API Development']
     },
     {
-      icon: '🏢',
       title: 'Software Empresarial',
       description: 'Soluções corporativas sob medida',
       features: ['ERP/CRM', 'Integração de sistemas', 'Business Intelligence', 'Automação de processos']
     },
     {
-      icon: '☁️',
       title: 'Cloud Solutions',
       description: 'Migração e otimização para nuvem',
       features: ['AWS/Azure/GCP', 'Microserviços', 'DevOps', 'Monitoramento 24/7']
     },
     {
-      icon: '🔧',
       title: 'Modernização',
       description: 'Atualização de sistemas legados',
       features: ['Refatoração de código', 'Migração de dados', 'Novas tecnologias', 'Performance']
@@ -176,7 +170,6 @@ const SoftwarePage = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <NeonGradientCard key={index} className="p-6 hover:scale-105 transition-transform duration-300">
-                <div className="text-4xl mb-4">{service.icon}</div>
                 <h3 className="text-xl font-bold text-primary-blue mb-3">
                   {service.title}
                 </h3>

@@ -6,29 +6,25 @@ const SoftwareDevelopment = () => {
       number: '01',
       title: 'Discovery',
       subtitle: 'Análise de Sistema',
-      description: 'Onde é feito o levantamento de requisitos e as regras de negócio são entendidas profundamente.',
-      icon: '🔍'
+      description: 'Onde é feito o levantamento de requisitos e as regras de negócio são entendidas profundamente.'
     },
     {
       number: '02',
       title: 'Design',
       subtitle: 'Arquitetura & UX',
-      description: 'Criação da arquitetura técnica e experiência do usuário com foco na usabilidade.',
-      icon: '🎨'
+      description: 'Criação da arquitetura técnica e experiência do usuário com foco na usabilidade.'
     },
     {
       number: '03',
       title: 'Development',
       subtitle: 'Desenvolvimento Ágil',
-      description: 'Implementação utilizando metodologias ágeis com entregas incrementais.',
-      icon: '⚡'
+      description: 'Implementação utilizando metodologias ágeis com entregas incrementais.'
     },
     {
       number: '04',
       title: 'Deployment',
       subtitle: 'Entrega & Otimização',
-      description: 'Deploy seguro e otimização contínua baseada em feedback real de usuários.',
-      icon: '🚀'
+      description: 'Deploy seguro e otimização contínua baseada em feedback real de usuários.'
     }
   ];
 

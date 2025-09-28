@@ -98,15 +98,15 @@ const Hero = () => {
             <h3 className="text-primary-blue font-semibold mb-4 text-xl">Nossas Especialidades</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
               <div className="text-center">
-                <div className="text-primary-blue font-semibold mb-2">💻 Desenvolvimento</div>
+                <div className="text-primary-blue font-semibold mb-2">Desenvolvimento</div>
                 <p className="text-gray-300">MVPs e produtos escaláveis</p>
               </div>
               <div className="text-center">
-                <div className="text-primary-blue font-semibold mb-2">🔒 Cybersegurança</div>
+                <div className="text-primary-blue font-semibold mb-2">Cybersegurança</div>
                 <p className="text-gray-300">Proteção e auditoria</p>
               </div>
               <div className="text-center">
-                <div className="text-primary-blue font-semibold mb-2">🤖 IA & Consultoria</div>
+                <div className="text-primary-blue font-semibold mb-2">IA & Consultoria</div>
                 <p className="text-gray-300">Soluções inteligentes</p>
               </div>
             </div>

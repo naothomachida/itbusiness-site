@@ -7,23 +7,19 @@ const Cybersecurity = () => {
   const services = [
     {
       title: "Auditoria de Segurança",
-      description: "Análise completa de vulnerabilidades e compliance",
-      icon: "🔍"
+      description: "Análise completa de vulnerabilidades e compliance"
     },
     {
       title: "Penetration Testing",
-      description: "Testes de invasão para identificar falhas críticas",
-      icon: "🛡️"
+      description: "Testes de invasão para identificar falhas críticas"
     },
     {
       title: "Consultoria SOC",
-      description: "Implementação de centros de operações de segurança",
-      icon: "👥"
+      description: "Implementação de centros de operações de segurança"
     },
     {
       title: "Compliance & LGPD",
-      description: "Adequação às regulamentações de proteção de dados",
-      icon: "📋"
+      description: "Adequação às regulamentações de proteção de dados"
     }
   ];
 
@@ -48,7 +44,7 @@ const Cybersecurity = () => {
         <div className="text-center mb-16">
           <ShineBorder className="mx-auto mb-8">
             <h2 className="text-4xl md:text-5xl font-bold text-white">
-              🔒 Cybersegurança & Consultoria
+              Cybersegurança & Consultoria
             </h2>
           </ShineBorder>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -79,7 +75,6 @@ const Cybersecurity = () => {
           {services.map((service, index) => (
             <NeonGradientCard key={index} className="p-6 h-full">
               <div className="text-center">
-                <div className="text-4xl mb-4">{service.icon}</div>
                 <h3 className="text-xl font-semibold text-primary-blue mb-3">
                   {service.title}
                 </h3>
@@ -111,7 +106,6 @@ const Cybersecurity = () => {
               </ul>
             </div>
             <div className="text-center">
-              <div className="text-6xl mb-4">🛡️</div>
               <div className="text-primary-blue font-bold text-xl mb-2">
                 Proteção Proativa
               </div>
