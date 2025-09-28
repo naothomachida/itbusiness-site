@@ -99,6 +99,7 @@ const Header = () => {
             <Link
               to="/about"
               className="text-white hover:text-primary-blue transition-colors duration-200 text-sm font-medium"
+              onClick={() => window.scrollTo(0, 0)}
             >
               Sobre Nós
             </Link>
@@ -128,6 +129,7 @@ const Header = () => {
                       key={item.name}
                       to={item.href}
                       className="flex items-center px-4 py-3 text-white hover:text-primary-blue hover:bg-primary-blue/10 transition-colors duration-200 border-b border-gray-700 last:border-b-0"
+                      onClick={() => window.scrollTo(0, 0)}
                     >
                       <span className="mr-3">{item.icon}</span>
                       <span className="text-sm font-medium">{item.name}</span>
@@ -142,6 +144,7 @@ const Header = () => {
                 key={item.name}
                 to={item.href}
                 className="text-white hover:text-primary-blue transition-colors duration-200 text-sm font-medium"
+                onClick={() => window.scrollTo(0, 0)}
               >
                 {item.name}
               </Link>
@@ -150,7 +153,7 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Link to="/contact" className="btn-primary">
+            <Link to="/contact" className="btn-primary" onClick={() => window.scrollTo(0, 0)}>
               Fale Conosco
             </Link>
           </div>
@@ -202,7 +205,10 @@ const Header = () => {
             <Link
               to="/about"
               className="group flex items-center space-x-4 text-white hover:text-primary-blue transition-all duration-300 text-xl font-medium transform hover:scale-105"
-              onClick={() => setIsMenuOpen(false)}
+              onClick={() => {
+                setIsMenuOpen(false);
+                window.scrollTo(0, 0);
+              }}
               style={{
                 animationDelay: '0.1s',
                 animation: 'fadeInUp 0.6s ease-out both'
@@ -220,7 +226,10 @@ const Header = () => {
                 key={item.name}
                 to={item.href}
                 className="group flex items-center space-x-4 text-white hover:text-primary-blue transition-all duration-300 text-xl font-medium transform hover:scale-105"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  window.scrollTo(0, 0);
+                }}
                 style={{
                   animationDelay: `${(index + 2) * 0.1}s`,
                   animation: 'fadeInUp 0.6s ease-out both'
@@ -270,7 +279,10 @@ const Header = () => {
               <Link
                 to="/contact"
                 className="btn-primary text-lg px-8 py-4 inline-block transform hover:scale-105 transition-all duration-300"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  window.scrollTo(0, 0);
+                }}
                 style={{
                   animationDelay: `${(servicesItems.length + 4) * 0.1}s`,
                   animation: 'fadeInUp 0.6s ease-out both'

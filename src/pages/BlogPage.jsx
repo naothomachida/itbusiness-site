@@ -114,9 +114,11 @@ const BlogPage = () => {
                       {article.readTime}
                     </span>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-3 line-clamp-2">
-                    {article.title}
-                  </h3>
+                  <Link to={`/blog/${article.slug}`} onClick={() => window.scrollTo(0, 0)}>
+                    <h3 className="text-xl font-bold text-white mb-3 line-clamp-2 hover:text-primary-blue transition-colors cursor-pointer">
+                      {article.title}
+                    </h3>
+                  </Link>
                   <p className="text-gray-300 mb-4 line-clamp-3">
                     {article.excerpt}
                   </p>
@@ -143,6 +145,7 @@ const BlogPage = () => {
                   <Link
                     to={`/blog/${article.slug}`}
                     className="bg-primary-blue hover:bg-primary-blue/80 text-white px-4 py-2 rounded-lg font-medium transition-colors"
+                    onClick={() => window.scrollTo(0, 0)}
                   >
                     Ler artigo
                   </Link>
