@@ -9,7 +9,7 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="text-white">Sociedade </span>
+            <span className="text-white">Parceria </span>
             <span className="text-primary-blue">sob Conduta</span>
           </h2>
           <p className="text-xl text-primary-blue font-semibold mb-8">
@@ -23,7 +23,7 @@ const About = () => {
               Nossa Filosofia de Trabalho
             </h3>
             <p className="text-lg text-gray-300 leading-relaxed max-w-4xl mx-auto">
-              Operamos como uma <span className="text-primary-blue font-semibold">sociedade ética e transparente</span>,
+              Operamos como uma <span className="text-primary-blue font-semibold">parceria ética e transparente</span>,
               onde cada projeto é conduzido com <span className="text-primary-blue font-semibold">responsabilidade integral</span>
               e <span className="text-primary-blue font-semibold">compromisso com resultados sustentáveis</span>.
               Nossos valores direcionam cada decisão técnica e estratégica.
@@ -34,7 +34,7 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Content */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-white mb-4">Modelo de Sociedade</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">Modelo de Parceria</h3>
             <p className="text-lg text-gray-300 leading-relaxed">
               Estabelecemos <span className="text-primary-blue font-semibold">parcerias estratégicas</span>
               baseadas em transparência total, onde seus objetivos se tornam nossos objetivos.
@@ -100,7 +100,7 @@ const About = () => {
               🤝 Parcerias Estratégicas
             </h3>
             <p className="text-gray-300 text-sm">
-              Formamos sociedades de longo prazo baseadas em confiança mútua, transparência total e objetivos compartilhados.
+              Formamos parcerias de longo prazo baseadas em confiança mútua, transparência total e objetivos compartilhados.
             </p>
           </NeonGradientCard>
 

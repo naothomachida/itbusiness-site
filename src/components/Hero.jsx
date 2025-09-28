@@ -41,7 +41,7 @@ const Hero = () => {
               SEU MVP AINDA NÃO SAIU DO PAPEL?
             </h2>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              <span className="text-blue-300">Sociedade para</span>
+              <span className="text-blue-300">Parceiro de Tecnologia para</span>
               <br />
               <span className="text-blue-600 font-bold">
                 Produção de Software
@@ -60,14 +60,17 @@ const Hero = () => {
               <span className="text-primary-blue font-bold text-2xl md:text-3xl block mb-4">
                 Lançamos produtos em semanas, não em meses.
               </span>
-              Transformamos ideias em MVPs funcionais através de nossa sociedade especializada em desenvolvimento ágil,
-              cybersegurança e consultoria estratégica em IA.
             </p>
           </NeonGradientCard>
 
+          <p className="text-base md:text-lg text-gray-400 mb-8 max-w-3xl mx-auto">
+            Transformamos ideias em MVPs funcionais através de nossa parceria especializada em desenvolvimento ágil,
+            cybersegurança e consultoria estratégica em IA.
+          </p>
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <a href="#software" className="btn-primary text-lg px-8 py-4 inline-block">
-              Iniciar Sociedade
+              Iniciar Parceria
             </a>
             <a href="#contato" className="btn-secondary text-lg px-8 py-4 inline-block">
               Consulta Gratuita
