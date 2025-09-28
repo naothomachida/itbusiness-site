@@ -71,7 +71,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 bg-black text-white">
+    <div className="fixed inset-0 z-50 bg-black/100 text-white">
       {/* Header */}
       <div className="flex justify-between items-center h-16 px-4 border-b border-gray-800">
         <div className="text-xl font-bold text-primary-blue">
