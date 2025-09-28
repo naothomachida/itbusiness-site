@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
 
   const servicesItems = [
@@ -44,44 +43,6 @@ const Header = () => {
     },
   ];
 
-  const navItems = [
-    {
-      name: 'Início',
-      href: '/',
-      icon: (
-        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
-        </svg>
-      )
-    },
-    {
-      name: 'Sobre Nós',
-      href: '/about',
-      icon: (
-        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zm4 18v-6h2.5l-2.54-7.63A2.002 2.002 0 0 0 18 7h-4c-.8 0-1.54.37-2 1l-3 4v6h2v7h1.5v-7H15v7h5zM12.5 11.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5S11 9.17 11 10s.67 1.5 1.5 1.5zM5.5 6c1.11 0 2-.89 2-2s-.89-2-2-2-2 .89-2 2 .89 2 2 2zm1.5 1h-2C4.01 7 3 8.01 3 9v6h1.5v7h2v-7H8V9c0-.99-.99-2-1.5-2z"/>
-        </svg>
-      )
-    },
-    {
-      name: 'Blog',
-      href: '/blog',
-      icon: (
-        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
-        </svg>
-      )
-    },
-    {
-      name: 'Contato',
-      href: '/contact',
-      icon: (
-        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-        </svg>
-      )
-    },
-  ];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-md border-b border-primary-blue/20">
@@ -139,16 +100,13 @@ const Header = () => {
               )}
             </div>
 
-            {navItems.filter(item => ['Blog'].includes(item.name)).map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className="text-white hover:text-primary-blue transition-colors duration-200 text-sm font-medium"
-                onClick={() => window.scrollTo(0, 0)}
-              >
-                {item.name}
-              </Link>
-            ))}
+            <Link
+              to="/blog"
+              className="text-white hover:text-primary-blue transition-colors duration-200 text-sm font-medium"
+              onClick={() => window.scrollTo(0, 0)}
+            >
+              Blog
+            </Link>
           </nav>
 
           {/* CTA Button */}
@@ -160,141 +118,18 @@ const Header = () => {
 
           {/* Mobile menu button */}
           <div className="lg:hidden">
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            <Link
+              to="/menu"
               className="text-white hover:text-primary-blue transition-colors duration-200 p-2"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                {isMenuOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                )}
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
-            </button>
+            </Link>
           </div>
         </div>
       </div>
 
-      {/* Mobile Navigation - Full Screen */}
-      {isMenuOpen && (
-        <>
-          {/* Background Overlay */}
-          <div className="lg:hidden fixed inset-0 z-40 bg-black/90" />
-
-          {/* Menu Content */}
-          <div className="lg:hidden fixed top-0 left-0 right-0 bottom-0 w-full h-screen z-50 bg-black">
-          {/* Header with close button */}
-          <div className="flex justify-between items-center h-16 px-4 border-b border-primary-blue/20">
-            <div className="text-2xl font-bold text-primary-blue">
-              IT Business
-            </div>
-            <button
-              onClick={() => setIsMenuOpen(false)}
-              className="text-white hover:text-primary-blue transition-colors duration-200 p-2"
-            >
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-
-          {/* Navigation Items */}
-          <div className="flex flex-col justify-center items-start min-h-screen px-6 space-y-6 pt-16 pb-20 w-full">
-            {/* Sobre Nós */}
-            <Link
-              to="/about"
-              className="group flex items-center space-x-4 text-white hover:text-primary-blue transition-all duration-300 text-xl font-medium transform hover:scale-105"
-              onClick={() => {
-                setIsMenuOpen(false);
-                window.scrollTo(0, 0);
-              }}
-              style={{
-                animationDelay: '0.1s',
-                animation: 'fadeInUp 0.6s ease-out both'
-              }}
-            >
-              <span className="group-hover:scale-110 transition-transform duration-300">
-                {navItems.find(item => item.name === 'Sobre Nós')?.icon}
-              </span>
-              <span>Sobre Nós</span>
-            </Link>
-
-            {/* All Services */}
-            {servicesItems.map((item, index) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className="group flex items-center space-x-4 text-white hover:text-primary-blue transition-all duration-300 text-xl font-medium transform hover:scale-105"
-                onClick={() => {
-                  setIsMenuOpen(false);
-                  window.scrollTo(0, 0);
-                }}
-                style={{
-                  animationDelay: `${(index + 2) * 0.1}s`,
-                  animation: 'fadeInUp 0.6s ease-out both'
-                }}
-              >
-                <span className="group-hover:scale-110 transition-transform duration-300">
-                  {item.icon}
-                </span>
-                <span>{item.name}</span>
-              </Link>
-            ))}
-
-            {/* Blog */}
-            <Link
-              to="/blog"
-              className="group flex items-center space-x-4 text-white hover:text-primary-blue transition-all duration-300 text-xl font-medium transform hover:scale-105"
-              onClick={() => setIsMenuOpen(false)}
-              style={{
-                animationDelay: `${(servicesItems.length + 2) * 0.1}s`,
-                animation: 'fadeInUp 0.6s ease-out both'
-              }}
-            >
-              <span className="group-hover:scale-110 transition-transform duration-300">
-                {navItems.find(item => item.name === 'Blog')?.icon}
-              </span>
-              <span>Blog</span>
-            </Link>
-
-            {/* Contato */}
-            <Link
-              to="/contact"
-              className="group flex items-center space-x-4 text-white hover:text-primary-blue transition-all duration-300 text-xl font-medium transform hover:scale-105"
-              onClick={() => setIsMenuOpen(false)}
-              style={{
-                animationDelay: `${(servicesItems.length + 3) * 0.1}s`,
-                animation: 'fadeInUp 0.6s ease-out both'
-              }}
-            >
-              <span className="group-hover:scale-110 transition-transform duration-300">
-                {navItems.find(item => item.name === 'Contato')?.icon}
-              </span>
-              <span>Contato</span>
-            </Link>
-
-            {/* CTA Button */}
-            <div className="mt-8">
-              <Link
-                to="/contact"
-                className="btn-primary text-lg px-8 py-4 inline-block transform hover:scale-105 transition-all duration-300"
-                onClick={() => {
-                  setIsMenuOpen(false);
-                  window.scrollTo(0, 0);
-                }}
-                style={{
-                  animationDelay: `${(servicesItems.length + 4) * 0.1}s`,
-                  animation: 'fadeInUp 0.6s ease-out both'
-                }}
-              >
-                Iniciar Parceria
-              </Link>
-            </div>
-          </div>
-        </div>
-        </>
-      )}
     </header>
   );
 };
