@@ -1,26 +1,45 @@
 import React from 'react';
 
 const AI = () => {
-  const aiFeatures = [
+  const businessBenefits = [
     {
-      icon: <div className="w-8 h-8 bg-gradient-to-br from-primary-blue to-purple-400 rounded-full"></div>,
-      title: 'Automação Cognitiva',
-      description: 'Sistemas inteligentes que automatizam processos complexos e tomam decisões baseadas em dados.'
+      title: 'Redução de Custos Operacionais',
+      description: 'IA automatiza tarefas repetitivas, reduzindo custos de mão de obra em até 40% e eliminando erros humanos.'
     },
     {
-      icon: <div className="w-8 h-8 bg-gradient-to-br from-primary-blue to-blue-400 rounded-lg"></div>,
-      title: 'Análise Preditiva',
-      description: 'Algoritmos avançados para prever tendências e comportamentos futuros do seu negócio.'
+      title: 'Aumento da Receita',
+      description: 'Análise preditiva identifica oportunidades de venda, personalizando ofertas e aumentando conversões em 35%.'
     },
     {
-      icon: <div className="w-8 h-8 bg-gradient-to-br from-primary-blue to-orange-400 rounded-full"></div>,
-      title: 'Otimização de Processos',
-      description: 'IA que identifica gargalos e otimiza fluxos de trabalho para máxima eficiência.'
+      title: 'Decisões Estratégicas Rápidas',
+      description: 'Dashboards inteligentes processam dados em tempo real, permitindo decisões baseadas em dados, não intuição.'
     },
     {
-      icon: <div className="w-8 h-8 bg-gradient-to-br from-primary-blue to-green-400 rounded-lg"></div>,
-      title: 'Insights Estratégicos',
-      description: 'Análise profunda de dados para gerar insights acionáveis e vantagem competitiva.'
+      title: 'Vantagem Competitiva',
+      description: 'Empresas com IA superam concorrentes em 73% dos casos, oferecendo serviços mais rápidos e personalizados.'
+    }
+  ];
+
+  const aiCapabilities = [
+    {
+      title: 'Atendimento ao Cliente 24/7',
+      impact: 'Chatbots inteligentes reduzem tempo de resposta em 90%',
+      roi: 'ROI de 300% em 12 meses'
+    },
+    {
+      title: 'Previsão de Demanda',
+      impact: 'Algoritmos preveem vendas com 95% de precisão',
+      roi: 'Redução de 25% em estoque parado'
+    },
+    {
+      title: 'Detecção de Fraudes',
+      impact: 'IA identifica padrões suspeitos em tempo real',
+      roi: 'Economia de R$ 50mil+ em perdas'
+    },
+    {
+      title: 'Otimização de Preços',
+      impact: 'Precificação dinâmica baseada em demanda e concorrência',
+      roi: 'Aumento de 15% na margem de lucro'
     }
   ];
 
@@ -29,34 +48,62 @@ const AI = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="text-primary-blue">Inteligência Artificial</span>
+            <span className="text-white">Software com </span>
+            <span className="text-primary-blue">IA no Coração</span>
           </h2>
-          <p className="text-xl text-white font-semibold mb-8">
-            Transformando o Futuro dos Negócios
+          <p className="text-xl text-primary-blue font-semibold mb-4">
+            Desenvolvemos Software Inteligente que Multiplica Resultados
+          </p>
+          <p className="text-lg text-gray-300 max-w-4xl mx-auto">
+            Enquanto seus concorrentes ainda fazem planilhas, você terá sistemas que pensam,
+            aprendem e tomam decisões sozinhos. É a diferença entre liderar o mercado ou ficar para trás.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           {/* Content */}
           <div>
-            <p className="text-lg text-gray-300 leading-relaxed mb-6">
-              Na IT Business, a <span className="text-primary-blue font-semibold">inteligência artificial</span> é 
-              o coração de nossas soluções de alta escala. Desenvolvemos sistemas inteligentes que 
-              <span className="text-primary-blue font-semibold"> automatizam processos</span>, 
-              <span className="text-primary-blue font-semibold"> otimizam decisões</span> e 
-              <span className="text-primary-blue font-semibold"> geram insights poderosos</span>.
-            </p>
+            <h3 className="text-2xl font-bold text-white mb-6">
+              Por Que Empresários Inteligentes Escolhem IA?
+            </h3>
 
-            <p className="text-lg text-gray-300 leading-relaxed mb-8">
-              Impulsionamos a eficiência e a inovação para nossos clientes high-ticket. 
-              Desde automação cognitiva até análise preditiva avançada, nossas soluções de IA são 
-              projetadas para entregar <span className="text-primary-blue font-semibold">valor mensurável</span> e 
-              <span className="text-primary-blue font-semibold"> vantagem competitiva</span>.
-            </p>
+            <div className="space-y-6">
+              <div className="bg-primary-blue/10 p-4 rounded-lg border-l-4 border-primary-blue">
+                <p className="text-primary-blue font-semibold text-lg mb-2">
+                  "Enquanto você dorme, sua IA trabalha"
+                </p>
+                <p className="text-gray-300">
+                  Sistemas que operam 24/7, processam pedidos, respondem clientes e otimizam operações
+                  sem descanso, férias ou aumentos salariais.
+                </p>
+              </div>
 
-            <button className="btn-primary">
-              Explorar Soluções de IA
-            </button>
+              <div className="bg-primary-blue/10 p-4 rounded-lg border-l-4 border-primary-blue">
+                <p className="text-primary-blue font-semibold text-lg mb-2">
+                  "Decisões baseadas em dados, não achismos"
+                </p>
+                <p className="text-gray-300">
+                  Pare de tomar decisões no escuro. IA analisa padrões que humanos não conseguem ver,
+                  prevendo tendências e oportunidades antes da concorrência.
+                </p>
+              </div>
+
+              <div className="bg-primary-blue/10 p-4 rounded-lg border-l-4 border-primary-blue">
+                <p className="text-primary-blue font-semibold text-lg mb-2">
+                  "Escala sem dor de cabeça"
+                </p>
+                <p className="text-gray-300">
+                  Atenda 10x mais clientes sem contratar 10x mais funcionários.
+                  IA cresce junto com seu negócio, sem aumentar sua folha de pagamento.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-8">
+              <button className="btn-primary text-lg px-8 py-4">
+                Quero IA no Meu Negócio
+              </button>
+            </div>
           </div>
 
           {/* Neural Network Visualization */}
@@ -118,91 +165,104 @@ const AI = () => {
           </div>
         </div>
 
-        {/* AI Features Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {aiFeatures.map((feature, index) => (
-            <div key={index} className="group bg-black/50 p-6 rounded-xl border border-primary-blue/20 hover:border-primary-blue/40 transition-all duration-300 hover:transform hover:scale-105">
-              <div className="mb-4 group-hover:scale-110 transition-transform duration-300 flex justify-center">
-                {feature.icon}
-              </div>
-              <h3 className="text-primary-blue font-bold text-lg mb-3">
-                {feature.title}
+        {/* Business Benefits Grid */}
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
+          {businessBenefits.map((benefit, index) => (
+            <div key={index} className="group bg-gradient-to-br from-primary-blue/10 to-primary-blue/5 p-8 rounded-xl border border-primary-blue/20 hover:border-primary-blue/40 transition-all duration-300 hover:transform hover:scale-105">
+              <h3 className="text-primary-blue font-bold text-xl mb-4">
+                {benefit.title}
               </h3>
-              <p className="text-gray-300 text-sm leading-relaxed">
-                {feature.description}
+              <p className="text-gray-300 leading-relaxed">
+                {benefit.description}
               </p>
             </div>
           ))}
         </div>
 
-        {/* Data Flow Animation */}
-        <div className="mt-16 bg-primary-blue/5 rounded-2xl p-12 border border-primary-blue/20">
-          <h3 className="text-3xl font-bold text-primary-blue mb-4 text-center">
-            Fluxo de Dados Inteligente
+        {/* ROI Section */}
+        <div className="bg-gradient-to-br from-primary-blue/20 to-primary-blue/5 rounded-2xl p-12 border border-primary-blue/30 mb-16">
+          <h3 className="text-3xl font-bold text-white mb-6 text-center">
+            IA que Gera Resultados Reais para Seu Negócio
           </h3>
           <p className="text-gray-300 text-center mb-12 max-w-4xl mx-auto text-lg">
-            Nossa arquitetura de IA processa milhões de pontos de dados em tempo real, 
-            transformando informações brutas em inteligência estratégica para seu negócio.
+            Não vendemos tecnologia pela tecnologia. Desenvolvemos soluções de IA que resolvem problemas reais
+            e geram retorno financeiro comprovado para empresários como você.
           </p>
-          
-          <div className="grid md:grid-cols-5 gap-8 items-center">
-            <div className="flex flex-col items-center">
-              <div className="w-20 h-20 bg-gradient-to-br from-primary-blue/30 to-primary-blue/10 rounded-xl flex items-center justify-center mb-4 border border-primary-blue/20">
-                <svg className="w-10 h-10 text-primary-blue" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M3 3h18v18H3V3zm2 2v14h14V5H5zm2 2h10v2H7V7zm0 4h7v2H7v-2zm0 4h10v2H7v-2z"/>
-                </svg>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {aiCapabilities.map((capability, index) => (
+              <div key={index} className="bg-black/50 p-6 rounded-xl border border-primary-blue/20 text-center">
+                <h4 className="text-primary-blue font-bold text-lg mb-3">
+                  {capability.title}
+                </h4>
+                <p className="text-gray-300 text-sm mb-4">
+                  {capability.impact}
+                </p>
+                <div className="bg-primary-blue/20 px-4 py-2 rounded-lg">
+                  <span className="text-primary-blue font-semibold text-sm">
+                    {capability.roi}
+                  </span>
+                </div>
               </div>
-              <h4 className="text-primary-blue font-semibold mb-1">Coleta</h4>
-              <p className="text-gray-300 text-sm text-center">Sensores IoT, APIs, Bancos de dados</p>
+            ))}
+          </div>
+        </div>
+
+        {/* Why Choose AI Now */}
+        <div className="bg-gradient-to-br from-primary-blue/10 to-primary-blue/5 rounded-2xl p-12 border border-primary-blue/30 text-center">
+          <h3 className="text-3xl font-bold text-white mb-6">
+            O Momento é Agora: IA Não é Mais Futuro, é Presente
+          </h3>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="bg-black/30 p-6 rounded-lg">
+              <h4 className="text-primary-blue font-bold text-xl mb-3">Seus Concorrentes Já Estão Usando</h4>
+              <p className="text-gray-300">
+                Empresas que adotaram IA estão crescendo 2x mais rápido.
+                Cada mês que você espera é vantagem que entrega para eles.
+              </p>
             </div>
 
-            <div className="hidden md:flex items-center justify-center">
-              <div className="w-full h-0.5 bg-primary-blue/30 relative">
-                <div className="absolute top-0 left-0 h-full bg-primary-blue animate-pulse rounded" style={{width: '100%'}}></div>
-              </div>
+            <div className="bg-black/30 p-6 rounded-lg">
+              <h4 className="text-primary-blue font-bold text-xl mb-3">Clientes Esperam Mais</h4>
+              <p className="text-gray-300">
+                Atendimento instantâneo, personalização total, experiências perfeitas.
+                IA é o que separa empresas modernas das ultrapassadas.
+              </p>
             </div>
 
-            <div className="flex flex-col items-center">
-              <div className="w-20 h-20 bg-gradient-to-br from-primary-blue/30 to-primary-blue/10 rounded-xl flex items-center justify-center mb-4 border border-primary-blue/20">
-                <svg className="w-10 h-10 text-primary-blue" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-                </svg>
-              </div>
-              <h4 className="text-primary-blue font-semibold mb-1">Processamento</h4>
-              <p className="text-gray-300 text-sm text-center">ML, Deep Learning, NLP</p>
-            </div>
-
-            <div className="hidden md:flex items-center justify-center">
-              <div className="w-full h-0.5 bg-primary-blue/30 relative">
-                <div className="absolute top-0 left-0 h-full bg-primary-blue animate-pulse rounded delay-1000" style={{width: '100%'}}></div>
-              </div>
-            </div>
-
-            <div className="flex flex-col items-center">
-              <div className="w-20 h-20 bg-gradient-to-br from-primary-blue/30 to-primary-blue/10 rounded-xl flex items-center justify-center mb-4 border border-primary-blue/20">
-                <svg className="w-10 h-10 text-primary-blue" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
-                </svg>
-              </div>
-              <h4 className="text-primary-blue font-semibold mb-1">Inteligência</h4>
-              <p className="text-gray-300 text-sm text-center">Dashboards, Alertas, Previsões</p>
+            <div className="bg-black/30 p-6 rounded-lg">
+              <h4 className="text-primary-blue font-bold text-xl mb-3">ROI Comprovado</h4>
+              <p className="text-gray-300">
+                Não é gasto, é investimento. IA se paga em 6-12 meses e
+                continua gerando economia e receita por anos.
+              </p>
             </div>
           </div>
 
-          <div className="mt-12 grid md:grid-cols-3 gap-6">
-            <div className="bg-black/30 p-6 rounded-lg border border-primary-blue/10">
-              <h5 className="text-primary-blue font-semibold mb-3">Velocidade de Processamento</h5>
-              <p className="text-gray-300 text-sm">Análise de terabytes de dados em segundos, com respostas em tempo real para tomada de decisões críticas.</p>
-            </div>
-            <div className="bg-black/30 p-6 rounded-lg border border-primary-blue/10">
-              <h5 className="text-primary-blue font-semibold mb-3">Precisão Algorítmica</h5>
-              <p className="text-gray-300 text-sm">Modelos de IA com 99.7% de precisão, treinados com milhões de padrões de dados empresariais.</p>
-            </div>
-            <div className="bg-black/30 p-6 rounded-lg border border-primary-blue/10">
-              <h5 className="text-primary-blue font-semibold mb-3">Escalabilidade Infinita</h5>
-              <p className="text-gray-300 text-sm">Infraestrutura cloud que escala automaticamente conforme o volume de dados do seu negócio cresce.</p>
+          <div className="bg-black/50 p-8 rounded-xl border border-primary-blue/20 mb-8">
+            <h4 className="text-2xl font-bold text-primary-blue mb-4">
+              Transforme Seu Negócio com IA em 90 Dias
+            </h4>
+            <p className="text-gray-300 text-lg mb-6">
+              Não espere anos para ver resultados. Nossos sistemas de IA são desenvolvidos
+              para gerar impacto imediato no seu faturamento e eficiência operacional.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="btn-primary text-lg px-8 py-4">
+                Quero uma Demonstração
+              </button>
+              <button className="btn-secondary text-lg px-8 py-4">
+                Calcular ROI da IA
+              </button>
             </div>
           </div>
+
+          <p className="text-gray-400 text-sm">
+            <strong>Garantia:</strong> Se em 90 dias você não ver melhoria mensurável nos seus processos,
+            devolvemos 100% do investimento. Essa é nossa confiança na IA que desenvolvemos.
+          </p>
         </div>
       </div>
     </section>
