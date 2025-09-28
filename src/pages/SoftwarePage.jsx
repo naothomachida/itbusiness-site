@@ -45,19 +45,43 @@ const SoftwarePage = () => {
     }
   ];
 
-  const technologies = [
-    { name: 'React', category: 'Frontend', icon: '⚛️' },
-    { name: 'Node.js', category: 'Backend', icon: '🟢' },
-    { name: 'Python', category: 'Backend', icon: '🐍' },
-    { name: 'TypeScript', category: 'Language', icon: '📘' },
-    { name: 'Docker', category: 'DevOps', icon: '🐳' },
-    { name: 'AWS', category: 'Cloud', icon: '☁️' },
-    { name: 'PostgreSQL', category: 'Database', icon: '🐘' },
-    { name: 'MongoDB', category: 'Database', icon: '🍃' },
-    { name: 'Redis', category: 'Cache', icon: '🔴' },
-    { name: 'Kubernetes', category: 'DevOps', icon: '⚙️' },
-    { name: 'GraphQL', category: 'API', icon: '📊' },
-    { name: 'Flutter', category: 'Mobile', icon: '📱' }
+  const expertiseAreas = [
+    {
+      title: 'Frontend Avançado',
+      description: 'Dominamos as mais modernas tecnologias de interface',
+      icon: '🎨',
+      highlights: ['Frameworks modernos', 'Design responsivo', 'Performance otimizada', 'UX excepcional']
+    },
+    {
+      title: 'Backend Robusto',
+      description: 'Arquiteturas escaláveis e seguras para qualquer demanda',
+      icon: '⚙️',
+      highlights: ['APIs eficientes', 'Microserviços', 'Alta disponibilidade', 'Segurança avançada']
+    },
+    {
+      title: 'Cloud Computing',
+      description: 'Especialistas em soluções na nuvem',
+      icon: '☁️',
+      highlights: ['Infraestrutura escalável', 'DevOps automation', 'Monitoramento 24/7', 'Custos otimizados']
+    },
+    {
+      title: 'Mobile Excellence',
+      description: 'Apps nativos e multiplataforma de alta qualidade',
+      icon: '📱',
+      highlights: ['Performance nativa', 'UI/UX intuitiva', 'Integração completa', 'Store optimization']
+    },
+    {
+      title: 'Banco de Dados',
+      description: 'Gestão eficiente de dados em qualquer escala',
+      icon: '🗃️',
+      highlights: ['Modelagem otimizada', 'Alta performance', 'Backup automático', 'Análise avançada']
+    },
+    {
+      title: 'Integração de Sistemas',
+      description: 'Conectamos diferentes plataformas perfeitamente',
+      icon: '🔗',
+      highlights: ['APIs robustas', 'Sincronização real-time', 'Protocolos seguros', 'Compatibilidade total']
+    }
   ];
 
   const process = [
@@ -99,29 +123,6 @@ const SoftwarePage = () => {
     }
   ];
 
-  const caseStudies = [
-    {
-      title: 'E-commerce B2B',
-      client: 'TechCorp Solutions',
-      challenge: 'Modernizar plataforma legada de vendas',
-      solution: 'Sistema completo com React, Node.js e AWS',
-      results: ['300% aumento nas vendas', '50% redução no tempo de resposta', '99.9% uptime']
-    },
-    {
-      title: 'App de Delivery',
-      client: 'FoodFast',
-      challenge: 'Criar MVP para validação de mercado',
-      solution: 'App React Native com backend escalável',
-      results: ['10k downloads em 30 dias', 'Investimento de R$ 2M', 'Expansão para 5 cidades']
-    },
-    {
-      title: 'Sistema de Gestão',
-      client: 'MedClinic',
-      challenge: 'Digitalizar processos clínicos',
-      solution: 'Plataforma web com IA para diagnósticos',
-      results: ['80% redução em papel', '40% mais eficiência', 'Conformidade LGPD']
-    }
-  ];
 
   return (
     <Layout>
@@ -202,28 +203,36 @@ const SoftwarePage = () => {
         </div>
       </section>
 
-      {/* Tecnologias */}
+      {/* Nossa Expertise */}
       <section className="py-20 bg-gradient-to-br from-gray-900 to-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-              Tecnologias que Dominamos
+              Nossa Expertise Técnica
             </h2>
             <p className="text-xl text-gray-300">
-              Stack moderno para projetos de alta performance
+              Dominamos as mais modernas tecnologias e metodologias do mercado
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {technologies.map((tech, index) => (
-              <NeonGradientCard key={index} className="p-4 text-center hover:scale-105 transition-transform duration-300">
-                <div className="text-3xl mb-2">{tech.icon}</div>
-                <h3 className="text-lg font-bold text-white mb-1">
-                  {tech.name}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {expertiseAreas.map((area, index) => (
+              <NeonGradientCard key={index} className="p-6 hover:scale-105 transition-transform duration-300">
+                <div className="text-4xl mb-4">{area.icon}</div>
+                <h3 className="text-xl font-bold text-primary-blue mb-3">
+                  {area.title}
                 </h3>
-                <p className="text-sm text-primary-blue">
-                  {tech.category}
+                <p className="text-gray-300 mb-4">
+                  {area.description}
                 </p>
+                <ul className="space-y-2">
+                  {area.highlights.map((highlight, i) => (
+                    <li key={i} className="text-sm text-gray-400 flex items-center">
+                      <span className="w-2 h-2 bg-primary-blue rounded-full mr-2"></span>
+                      {highlight}
+                    </li>
+                  ))}
+                </ul>
               </NeonGradientCard>
             ))}
           </div>
@@ -263,65 +272,13 @@ const SoftwarePage = () => {
         </div>
       </section>
 
-      {/* Cases de Sucesso */}
-      <section className="py-20 bg-gradient-to-br from-gray-900 to-black">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-              Cases de Sucesso
-            </h2>
-            <p className="text-xl text-gray-300">
-              Projetos que transformaram negócios
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-3 gap-8">
-            {caseStudies.map((study, index) => (
-              <NeonGradientCard key={index} className="p-6 hover:scale-105 transition-transform duration-300">
-                <h3 className="text-xl font-bold text-primary-blue mb-2">
-                  {study.title}
-                </h3>
-                <p className="text-gray-400 mb-4 font-semibold">
-                  {study.client}
-                </p>
-
-                <div className="mb-4">
-                  <h4 className="text-white font-semibold mb-2">Desafio:</h4>
-                  <p className="text-gray-300 text-sm">
-                    {study.challenge}
-                  </p>
-                </div>
-
-                <div className="mb-4">
-                  <h4 className="text-white font-semibold mb-2">Solução:</h4>
-                  <p className="text-gray-300 text-sm">
-                    {study.solution}
-                  </p>
-                </div>
-
-                <div>
-                  <h4 className="text-white font-semibold mb-2">Resultados:</h4>
-                  <ul className="space-y-1">
-                    {study.results.map((result, i) => (
-                      <li key={i} className="text-sm text-gray-300 flex items-center">
-                        <span className="w-2 h-2 bg-primary-blue rounded-full mr-2"></span>
-                        {result}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </NeonGradientCard>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <CTASection
         title="Pronto para transformar sua ideia em realidade?"
         subtitle="Nossa equipe de especialistas está pronta para desenvolver a solução perfeita para seu negócio. Vamos começar hoje mesmo!"
         primaryButtonText="Iniciar Projeto"
-        secondaryButtonText="Ver Mais Cases"
+        secondaryButtonText="Falar com Especialista"
       />
     </Layout>
   );

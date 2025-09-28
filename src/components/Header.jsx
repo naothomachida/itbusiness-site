@@ -64,15 +64,6 @@ const Header = () => {
       )
     },
     {
-      name: 'Portfólio',
-      href: '/portfolio',
-      icon: (
-        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M20 6h-2.5l-1.5-1.5h-5L9.5 6H7c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z"/>
-        </svg>
-      )
-    },
-    {
       name: 'Blog',
       href: '/blog',
       icon: (
@@ -146,7 +137,7 @@ const Header = () => {
               )}
             </div>
 
-            {navItems.filter(item => ['Portfólio', 'Blog'].includes(item.name)).map((item) => (
+            {navItems.filter(item => ['Blog'].includes(item.name)).map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
