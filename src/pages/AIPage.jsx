@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Layout from '../components/shared/Layout';
 import CTASection from '../components/shared/CTASection';
 import NeonGradientCard from '../components/ui/neon-gradient-card';
@@ -6,6 +6,9 @@ import Meteors from '../components/ui/meteors';
 import FlickeringGrid from '../components/ui/flickering-grid';
 
 const AIPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const businessSolutions = [
     {
       title: 'Sistemas Sob Medida com IA',
