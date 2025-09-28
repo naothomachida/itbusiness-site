@@ -184,7 +184,7 @@ const Header = () => {
 
       {/* Mobile Navigation - Full Screen */}
       {isMenuOpen && (
-        <div className="lg:hidden fixed inset-0 z-50 bg-black backdrop-blur-md">
+        <div className="lg:hidden fixed top-0 left-0 right-0 bottom-0 w-full h-full z-50 bg-black">
           {/* Header with close button */}
           <div className="flex justify-between items-center h-16 px-4 border-b border-primary-blue/20">
             <div className="text-2xl font-bold text-primary-blue">
@@ -201,7 +201,7 @@ const Header = () => {
           </div>
 
           {/* Navigation Items */}
-          <div className="flex flex-col justify-center items-center h-full px-6 space-y-6 pb-20">
+          <div className="flex flex-col justify-center items-center min-h-screen px-6 space-y-6 pt-16 pb-20">
             {navItems.map((item, index) => (
               <Link
                 key={item.name}
