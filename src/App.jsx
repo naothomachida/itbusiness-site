@@ -6,6 +6,7 @@ import SoftwarePage from './pages/SoftwarePage';
 import AIPage from './pages/AIPage';
 import CybersecurityPage from './pages/CybersecurityPage';
 import StartupsPage from './pages/StartupsPage';
+import MenuPage from './pages/MenuPage';
 import BlogPage from './pages/BlogPage';
 import BlogArticlePage from './pages/blog/BlogArticlePage';
 import Contact from './components/Contact';
@@ -21,6 +22,7 @@ function App() {
         <Route path="/ai" element={<AIPage />} />
         <Route path="/cybersecurity" element={<CybersecurityPage />} />
         <Route path="/startups" element={<StartupsPage />} />
+        <Route path="/menu" element={<MenuPage />} />
         <Route path="/contact" element={
           <Layout>
             <div className="pt-20">
