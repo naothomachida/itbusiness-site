@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import LoadingOverlay from './LoadingOverlay';
 
 const MobileMenu = ({ isOpen, onClose }) => {
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleMenuItemClick = () => {
+    setIsLoading(true);
+    onClose();
+
+    // Loading por 2 segundos
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  };
   const allMenuItems = [
     {
       name: 'Sobre Nós',
@@ -93,7 +105,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
           <Link
             key={item.name}
             to={item.href}
-            onClick={onClose}
+            onClick={handleMenuItemClick}
             className="flex items-center px-4 py-4 text-white hover:bg-gray-900 transition-colors duration-200 border-b border-gray-800 last:border-b-0"
           >
             <div className="text-primary-blue mr-4">
@@ -108,6 +120,9 @@ const MobileMenu = ({ isOpen, onClose }) => {
           </Link>
         ))}
       </div>
+
+      {/* Loading Overlay */}
+      <LoadingOverlay isVisible={isLoading} />
     </div>
   );
 };
