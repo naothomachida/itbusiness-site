@@ -88,7 +88,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
       </div>
 
       {/* Menu Items */}
-      <div className="py-2">
+      <div className="py-2 bg-black" style={{backgroundColor: '#000000'}}>
         {allMenuItems.map((item, index) => (
           <Link
             key={item.name}
