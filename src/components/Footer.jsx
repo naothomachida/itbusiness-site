@@ -5,28 +5,28 @@ const Footer = () => {
 
   const footerLinks = {
     'Soluções': [
-      { name: 'Desenvolvimento de Software', href: '#software' },
-      { name: 'Inteligência Artificial', href: '#ai' },
-      { name: 'Consultoria Digital', href: '#solucoes' },
-      { name: 'Aceleração de Startups', href: '#startups' }
+      { name: 'Desenvolvimento de Software', href: '/software' },
+      { name: 'Inteligência Artificial', href: '/ai' },
+      { name: 'Consultoria Digital', href: '/consultancy' },
+      { name: 'Aceleração de Startups', href: '/startups' }
     ],
     'Empresa': [
-      { name: 'Sobre Nós', href: '#sobre' },
-      { name: 'Nosso Time', href: '#sobre' },
-      { name: 'Carreiras', href: '#contato' },
-      { name: 'Parceiros', href: '#contato' }
+      { name: 'Sobre Nós', href: '/about' },
+      { name: 'Nosso Time', href: '/about' },
+      { name: 'Carreiras', href: '/contact' },
+      { name: 'Parceiros', href: '/contact' }
     ],
     'Recursos': [
-      { name: 'Blog', href: '#' },
-      { name: 'Case Studies', href: '#' },
-      { name: 'Whitepapers', href: '#' },
-      { name: 'Webinars', href: '#' }
+      { name: 'Blog', href: '/blog' },
+      { name: 'Case Studies', href: '/blog' },
+      { name: 'Whitepapers', href: '/blog' },
+      { name: 'Webinars', href: '/blog' }
     ],
     'Suporte': [
-      { name: 'Contato', href: '#contato' },
-      { name: 'FAQ', href: '#' },
-      { name: 'Documentação', href: '#' },
-      { name: 'Status do Sistema', href: '#' }
+      { name: 'Contato', href: '/contact' },
+      { name: 'FAQ', href: '/contact' },
+      { name: 'Documentação', href: '/blog' },
+      { name: 'Status do Sistema', href: '/contact' }
     ]
   };
 
